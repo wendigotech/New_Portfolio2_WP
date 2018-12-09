@@ -22,13 +22,10 @@
                 <div class="entry-content">
                     <?php the_excerpt( ); ?>
                 </div>
-                <a class="btn btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
+                <a class="btn btn-primary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
                 <footer class="entry-footer"></footer>
             </article>
         <?php endwhile; ?>
     <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
     <?php endif; ?>
-    <nav aria-label="Posts navigation">
-        <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'wdg1' ), __( 'Older Posts &#xBB;', 'wdg1' ) ); ?>
-    </nav>

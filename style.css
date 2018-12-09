@@ -42,10 +42,3 @@ div-content {
     grid-template-rows: fit-content(40%);
     grid-gap: 10px;
 }
-
-.main-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: fit-content(40%);
-    grid-gap: 10px;
-}

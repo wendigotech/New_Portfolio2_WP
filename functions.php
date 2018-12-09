@@ -176,18 +176,6 @@ function st2_customize_register( $wp_customize ) {
         'section' => 'theme_settings'
     ));
 
-    $wp_customize->add_setting( 'footer_text', array(
-        'type' => 'theme_mod',
-        'default' => 'Proudly powered by WordPress | Theme: Starter Theme 2 by Pinegrow 2018. (Version: 0.0.0)',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'footer_text', array(
-        'label' => __( 'Footer Content', 'wdg1' ),
-        'type' => 'textarea',
-        'section' => 'footer_settings'
-    ));
-
     $wp_customize->add_setting( 'jumbotron_heading_color', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -209,6 +197,18 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'color',
         'section' => 'header_settings'
     ) ) );
+
+    $wp_customize->add_setting( 'footer_text', array(
+        'type' => 'theme_mod',
+        'default' => 'Proudly powered by WordPress | Theme: Starter Theme 2 by Pinegrow 2018. (Version: 0.0.0)',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'footer_text', array(
+        'label' => __( 'Footer Content', 'wdg1' ),
+        'type' => 'textarea',
+        'section' => 'footer_settings'
+    ));
 
     /* Pinegrow generated Customizer Controls End */
 
@@ -252,17 +252,14 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Styles Begin */
 
+    wp_deregister_style( 'style' );
+    wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
+
     wp_deregister_style( 'bootstrap' );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', false, null, 'all');
 
-    wp_deregister_style( 'theme' );
-    wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css', false, null, 'all');
-
     wp_deregister_style( 'woocommerce' );
     wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/css/woocommerce.css', false, null, 'all');
-
-    wp_deregister_style( 'style' );
-    wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
 
     wp_deregister_style( 'blkdesignsystem' );
     wp_enqueue_style( 'blkdesignsystem', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/css/blk-design-system.min.css', false, null, 'all');
@@ -272,6 +269,9 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
 
     wp_deregister_style( 'demo' );
     wp_enqueue_style( 'demo', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/demo/demo.css', false, null, 'all');
+
+    wp_deregister_style( 'theme' );
+    wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 

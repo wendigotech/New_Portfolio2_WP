@@ -22,6 +22,9 @@ get_header(); ?>
             <div class="col-md-8 content-area" id="primary">
                 <main class="site-main" id="main">
                     <?php get_template_part( 'loop-templates/content' ); ?>
+                    <nav aria-label="Posts navigation">
+                        <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'wdg1' ), __( 'Older Posts &#xBB;', 'wdg1' ) ); ?>
+                    </nav>
                 </main>                                 
             </div>
         </div>

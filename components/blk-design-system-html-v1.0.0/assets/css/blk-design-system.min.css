@@ -20648,9 +20648,5 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
     margin: 0;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: fit-content(40%);
-    grid-gap: 10px;
+div.main-content {
 }
