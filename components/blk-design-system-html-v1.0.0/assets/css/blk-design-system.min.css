@@ -5388,11 +5388,10 @@ input[type=submit].btn-block {
 
 .jumbotron {
     margin-bottom: 2rem;
-    background-color: #e9ecef;
     border-radius: .4285rem;
-    background-image: url('https://images.unsplash.com/photo-1523518000962-fe51c6b9611b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');
     padding: -2rem 1rem 2rem;
     margin-top: 50px;
+    background-color: rgba(151, 45, 45, 0);
 }
 
 @media (min-width:576px){
@@ -8256,7 +8255,7 @@ button.bg-darker:hover {
 
 .mb-5,
 .my-5 {
-    margin-bottom: 3rem!important;
+    margin-bottom: 3rem !important;
 }
 
 .ml-5,
