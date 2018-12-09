@@ -21,8 +21,8 @@
                  ?>
                 <div class="entry-content">
                     <?php the_excerpt( ); ?>
-                    <a class="btn btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
                 </div>
+                <a class="btn btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
                 <footer class="entry-footer"></footer>
             </article>
         <?php endwhile; ?>

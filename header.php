@@ -16,58 +16,80 @@
         <div class="hfeed site" id="page">
             <header>
                 <div itemscope="" itemtype="http://schema.org/WebSite" id="wrapper-navbar">
-                    <a class="skip-link sr-only sr-only-focusable" href="#content"><?php _e( 'Skip to content', 'wdg1' ); ?></a>
-                    <nav class="navbar bg-primary navbar-dark navbar-expand-lg"> 
+                    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
                         <div class="container">
-                            <?php if ( ! has_custom_logo() ) : ?>
-                                <div>
-                                    <a rel="home" class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a>
-                                </div>
-                            <?php else : ?>
-                                <?php the_custom_logo(); ?>
-                            <?php endif; ?>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler6" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'st2' ); ?>"> 
-                                <span class="navbar-toggler-icon"></span> 
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarToggler6"> 
-                                <?php if ( has_nav_menu( 'primary' ) ) : ?>
-                                    <?php wp_nav_menu( array(
-                                            'menu' => 'primary',
-                                            'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto ',
-                                            'container' => '',
-                                            'depth' => '2',
-                                            'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
-                                            'walker' => new wp_bootstrap4_navwalker()
-                                    ) ); ?>
-                                <?php endif; ?> 
+                            <div class="navbar-translate">
+                                <a class="navbar-brand" href="https://demos.creative-tim.com/blk-design-system/index.html" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank"> <span><?php _e( 'BLK•', 'wdg1' ); ?></span> <?php _e( 'Design System', 'wdg1' ); ?> </a>
+                                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-bar bar1"></span>
+                                    <span class="navbar-toggler-bar bar2"></span>
+                                    <span class="navbar-toggler-bar bar3"></span>
+                                </button>
                             </div>
-                        </div>                         
+                            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                                <div class="navbar-collapse-header">
+                                    <div class="row">
+                                        <div class="col-6 collapse-brand">
+                                            <a> <?php _e( 'BLK•', 'wdg1' ); ?> </a>
+                                        </div>
+                                        <div class="col-6 collapse-close text-right">
+                                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                                                <i class="tim-icons icon-simple-remove"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank"> <i class="fab fa-twitter"></i> <p class="d-lg-none d-xl-none"><?php _e( 'Twitter', 'wdg1' ); ?></p> </a>
+                                    </li>
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank"> <i class="fab fa-facebook-square"></i> <p class="d-lg-none d-xl-none"><?php _e( 'Facebook', 'wdg1' ); ?></p> </a>
+                                    </li>
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank"> <i class="fab fa-instagram"></i> <p class="d-lg-none d-xl-none"><?php _e( 'Instagram', 'wdg1' ); ?></p> </a>
+                                    </li>
+                                    <li class="dropdown nav-item">
+                                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i class="fa fa-cogs d-lg-none d-xl-none"></i> <?php _e( 'Getting started', 'wdg1' ); ?> </a>
+                                        <div class="dropdown-menu dropdown-with-icons">
+                                            <a href="https://demos.creative-tim.com/blk-design-system/docs/1.0/getting-started/overview.html" class="dropdown-item"> <i class="tim-icons icon-paper"></i> <?php _e( 'Documentation', 'wdg1' ); ?> </a>
+                                            <a href="examples/register-page.html" class="dropdown-item"> <i class="tim-icons icon-bullet-list-67"></i><?php _e( 'Register Page', 'wdg1' ); ?> </a>
+                                            <a href="examples/landing-page.html" class="dropdown-item"> <i class="tim-icons icon-image-02"></i><?php _e( 'Landing Page', 'wdg1' ); ?> </a>
+                                            <a href="examples/profile-page.html" class="dropdown-item"> <i class="tim-icons icon-single-02"></i><?php _e( 'Profile Page', 'wdg1' ); ?> </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn btn-default d-none d-lg-block" href="javascript:void(0)" onclick="scrollToDownload()"> <i class="tim-icons icon-cloud-download-93"></i> <?php _e( 'Download', 'wdg1' ); ?> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
-                </div>
-                <div class="night">
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
-                    <div class="shooting_star"></div>
                 </div>
                 <?php if ( get_theme_mod( 'show_jumbotron' ) ) : ?>
                     <div>
+                        <div class="night">
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                            <div class="shooting_star"></div>
+                        </div>
                         <div class="jumbotron" style="background-color:<?php echo get_theme_mod( 'jumbotron_bg_color' ); ?>;background-image:<?php echo 'url('.wp_get_attachment_image_url( get_theme_mod( 'jumbotron_bg_image' ), 'full' ).')' ?>;">
                             <div class="container">
                                 <h1 class="display-3" style="color:<?php echo get_theme_mod( 'jumbotron_heading_color' ); ?> !important;"><?php _e( 'Starter Theme', 'wdg1' ); ?> <b><?php _e( '2', 'wdg1' ); ?></b></h1>

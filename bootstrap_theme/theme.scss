@@ -28,7 +28,7 @@ figure,
 $shooting-time: 3000ms;
 
 .night {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
     transform: rotateZ(45deg);
@@ -131,4 +131,7 @@ $shooting-time: 3000ms;
     100% {
         transform: rotate(45 + 360deg);
     }
+}
+
+.entry-content {
 }
