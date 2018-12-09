@@ -110,36 +110,6 @@ function st2_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Hero Slider', 'wdg1' ),
-        'id' => 'hero',
-        'description' => 'Hero slider area. Place two or more widgets here and they will slide!',
-        'before_widget' => '<div class="carousel-item">',
-        'after_widget' => '</div>',
-        'before_title' => ' ',
-        'after_title' => ' '
-    ) );
-
-    register_sidebar( array(
-        'name' => __( 'Hero Canvas', 'wdg1' ),
-        'id' => 'herocanvas',
-        'description' => 'Full size canvas hero area for Bootstrap and other custom HTML markup',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '',
-        'after_title' => ''
-    ) );
-
-    register_sidebar( array(
-        'name' => __( 'Top Full', 'wdg1' ),
-        'id' => 'statichero',
-        'description' => 'Full top widget with dynamic grid',
-        'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s '. st2_slbd_count_widgets( 'statichero' ) .'">',
-        'after_widget' => '</div><!-- .static-hero-widget -->',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>'
-    ) );
-
-    register_sidebar( array(
         'name' => __( 'Bottom Full', 'wdg1' ),
         'id' => 'footerfull',
         'description' => 'Full bottom widget with dynamic grid',
@@ -205,41 +175,6 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'checkbox',
         'section' => 'theme_settings'
     ));
-
-    $wp_customize->add_setting( 'show_jumbotron', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'show_jumbotron', array(
-        'label' => __( 'Show Jumbotron', 'wdg1' ),
-        'description' => __( 'Activate the Jumbotron. Note: It will be visible on ALL the theme templates. If you need a selective display, use the Hero slider or  Hero Canvas widgets and the Widget Logic plugin.', 'wdg1' ),
-        'type' => 'checkbox',
-        'section' => 'header_settings'
-    ));
-
-    $wp_customize->add_setting( 'jumbotron_bg_color', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_bg_color', array(
-        'label' => __( 'Jumbotron Background color', 'wdg1' ),
-        'type' => 'color',
-        'section' => 'header_settings'
-    ) ) );
-
-    $wp_customize->add_setting( 'jumbotron_bg_image', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'jumbotron_bg_image', array(
-        'label' => __( 'Jumbotron Background image', 'wdg1' ),
-        'type' => 'media',
-        'mime_type' => 'image',
-        'section' => 'header_settings'
-    ) ) );
 
     $wp_customize->add_setting( 'jumbotron_heading_color', array(
         'type' => 'theme_mod',
