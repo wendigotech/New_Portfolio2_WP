@@ -48,6 +48,18 @@
                                 <li class="nav-item p-0">
                                     <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank"> <i class="fab fa-instagram"></i> <p class="d-lg-none d-xl-none"><?php _e( 'Instagram', 'wdg1' ); ?></p> </a>
                                 </li>
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> <i class="fa fa-cogs d-lg-none d-xl-none"></i> <?php _e( 'Getting started', 'wdg1' ); ?> </a>
+                                    <div class="dropdown-menu dropdown-with-icons">
+                                        <a href="https://demos.creative-tim.com/blk-design-system/docs/1.0/getting-started/overview.html" class="dropdown-item"> <i class="tim-icons icon-paper"></i> <?php _e( 'Documentation', 'wdg1' ); ?> </a>
+                                        <a href="examples/register-page.html" class="dropdown-item"> <i class="tim-icons icon-bullet-list-67"></i><?php _e( 'Register Page', 'wdg1' ); ?> </a>
+                                        <a href="examples/landing-page.html" class="dropdown-item"> <i class="tim-icons icon-image-02"></i><?php _e( 'Landing Page', 'wdg1' ); ?> </a>
+                                        <a href="examples/profile-page.html" class="dropdown-item"> <i class="tim-icons icon-single-02"></i><?php _e( 'Profile Page', 'wdg1' ); ?> </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-default d-none d-lg-block" href="javascript:void(0)" onclick="scrollToDownload()"> <i class="tim-icons icon-cloud-download-93"></i> <?php _e( 'Download', 'wdg1' ); ?> </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
