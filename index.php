@@ -10,18 +10,17 @@ get_header(); ?>
     </div>
 </div>
 <div class="wrapper" id="index-wrapper">
-    <div class="container " id="content" tabindex="-1">
+    <div id="content" tabindex="-1" class="container-fluid">
         <div class="row">
             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
-                <div class="col-md-4 widget-area" role="complementary" id="left-sidebar">
+                <div class="col-md-4 widget-area d-sm-none d-md-inline-block" role="complementary" id="left-sidebar">
                     <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
                         <?php dynamic_sidebar( 'left-sidebar' ); ?>
                     <?php endif; ?> 
                 </div>
             <?php endif; ?>
-            <div class="col-md-8 content-area" id="primary">
+            <div class="col-md-8 content-area col-sm-12" id="primary">
                 <main class="site-main" id="main">
-                    <?php get_template_part( 'loop-templates/content' ); ?>
                     <nav aria-label="Posts navigation">
                         <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'wdg1' ), __( 'Older Posts &#xBB;', 'wdg1' ) ); ?>
                     </nav>
