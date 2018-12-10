@@ -5390,7 +5390,7 @@ input[type=submit].btn-block {
     margin-bottom: 2rem;
     border-radius: .4285rem;
     padding: -2rem 1rem 2rem;
-    margin-top: 50px;
+    margin-top: 10%;
     background-color: rgba(151, 45, 45, 0);
 }
 
@@ -7049,7 +7049,7 @@ button.bg-darker:hover {
     }
 
     .d-md-inline-block {
-        display: inline-block!important;
+        display: inline-block !important;
     }
 
     .d-md-block {
@@ -20648,9 +20648,14 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
     margin: 0;
 }
 
-div.main-content {
+div-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content(40%);
-    grid-gap: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content(40%);
 }
