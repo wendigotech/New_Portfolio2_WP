@@ -11,20 +11,20 @@ get_header(); ?>
                         <div class="slideshow__deco"></div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?>
                             </div>
                             <div class="slide__title-wrap">
                                 <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Automation', 'wdg1' ); ?></h3>
+                                <h3 class="slide__title"><?php _e( 'Automation1', 'wdg1' ); ?></h3>
                                 <h4 class="slide__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
                             </div>
                         </div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Random Roam', 'wdg1' ); ?>
@@ -37,7 +37,7 @@ get_header(); ?>
                         </div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
@@ -50,7 +50,7 @@ get_header(); ?>
                         </div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Haunted Drift', 'wdg1' ); ?>
@@ -63,7 +63,7 @@ get_header(); ?>
                         </div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Fun Diverge', 'wdg1' ); ?>
@@ -76,7 +76,7 @@ get_header(); ?>
                         </div>
                         <div class="slide">
                             <div class="slide__img-wrap">
-                                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
