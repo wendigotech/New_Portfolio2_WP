@@ -10,8 +10,7 @@
                             <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
                         <?php endif; ?>
                         <div class="entry-meta">
-                            <p><?php _e( 'Posted on', 'wdg1' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'wdg1' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
-                        </div>
+</div>
                     </header>
                     <?php
                         if ( has_post_thumbnail() ) {
