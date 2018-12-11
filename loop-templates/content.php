@@ -1,5 +1,5 @@
 
-    <div class="content">
+    <div class="content1">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
                 <article <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">

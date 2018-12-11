@@ -20655,7 +20655,7 @@ div-content {
     grid-template-rows: fit-content(40%);
 }
 
-.content {
+.content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content(40%);
