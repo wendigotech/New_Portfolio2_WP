@@ -248,18 +248,6 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
     wp_deregister_script( 'bootstrapswitch' );
     wp_enqueue_script( 'bootstrapswitch', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/js/plugins/bootstrap-switch.js', false, null, true);
 
-    wp_deregister_script( 'charming' );
-    wp_enqueue_script( 'charming', get_template_directory_uri() . '/assets/js/charming.min.js', false, null, true);
-
-    wp_deregister_script( 'demo' );
-    wp_enqueue_script( 'demo', get_template_directory_uri() . '/assets/js/demo2.js', false, null, true);
-
-    wp_deregister_script( 'imagesloadedpkgd' );
-    wp_enqueue_script( 'imagesloadedpkgd', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', false, null, true);
-
-    wp_deregister_script( 'tweenmax' );
-    wp_enqueue_script( 'tweenmax', get_template_directory_uri() . '/assets/js/TweenMax.min.js', false, null, true);
-
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
