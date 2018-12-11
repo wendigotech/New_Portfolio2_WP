@@ -6,12 +6,39 @@
 <?php
 get_header(); ?>
 
+<svg class="hidden">
+    <symbol id="icon-arrow" viewbox="0 0 24 24">
+        <title>
+            <?php _e( 'arrow', 'wdg1' ); ?>
+        </title>
+        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+    </symbol>
+    <symbol id="icon-drop" viewbox="0 0 24 24">
+        <title>
+            <?php _e( 'drop', 'wdg1' ); ?>
+        </title>
+        <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/>
+        <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+    </symbol>
+    <symbol id="icon-longarrow" viewbox="0 0 54 24">
+        <title>
+            <?php _e( 'longarrow', 'wdg1' ); ?>
+        </title>
+        <path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z"/>
+    </symbol>
+    <symbol id="icon-navarrow" viewbox="0 0 408 408">
+        <title>
+            <?php _e( 'navarrow', 'wdg1' ); ?>
+        </title>
+        <polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
+    </symbol>
+</svg>
 <main>
     <div class="slideshow">
         <div class="slideshow__deco"></div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/components/blk-design-system-html-v1.0.0/assets/img/james.jpg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1482050340796-deca383195b0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?>
@@ -24,7 +51,7 @@ get_header(); ?>
         </div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/../New_Portfolio2_WP/components/blk-design-system-html-v1.0.0/assets/img/julie.jpeg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Random Roam', 'wdg1' ); ?>
@@ -37,7 +64,7 @@ get_header(); ?>
         </div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/../New_Portfolio2_WP/components/blk-design-system-html-v1.0.0/assets/img/lora.jpg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1534131270927-b0704a572b6f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
@@ -50,7 +77,7 @@ get_header(); ?>
         </div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/../New_Portfolio2_WP/components/blk-design-system-html-v1.0.0/assets/img/mike.jpg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Haunted Drift', 'wdg1' ); ?>
@@ -63,34 +90,7 @@ get_header(); ?>
         </div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <svg class="hidden">
-                    <symbol id="icon-arrow" viewbox="0 0 24 24">
-                        <title>
-                            <?php _e( 'arrow', 'wdg1' ); ?>
-                        </title>
-                        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-                    </symbol>
-                    <symbol id="icon-drop" viewbox="0 0 24 24">
-                        <title>
-                            <?php _e( 'drop', 'wdg1' ); ?>
-                        </title>
-                        <path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/>
-                        <path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-                    </symbol>
-                    <symbol id="icon-longarrow" viewbox="0 0 54 24">
-                        <title>
-                            <?php _e( 'longarrow', 'wdg1' ); ?>
-                        </title>
-                        <path d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z"/>
-                    </symbol>
-                    <symbol id="icon-navarrow" viewbox="0 0 408 408">
-                        <title>
-                            <?php _e( 'navarrow', 'wdg1' ); ?>
-                        </title>
-                        <polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
-                    </symbol>
-                </svg>
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/../New_Portfolio2_WP/components/blk-design-system-html-v1.0.0/assets/img/ryan.jpg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1437075130536-230e17c888b5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Fun Diverge', 'wdg1' ); ?>
@@ -103,7 +103,7 @@ get_header(); ?>
         </div>
         <div class="slide">
             <div class="slide__img-wrap">
-                <div class="slide__img" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/img/6.jpg');"></div>
+                <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
             </div>
             <div class="slide__side">
                 <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
