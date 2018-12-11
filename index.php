@@ -10,7 +10,7 @@ get_header(); ?>
     </div>
 </div>
 <div class="wrapper" id="index-wrapper">
-    <div id="content" tabindex="-1" class="container-fluid">
+    <div id="content" tabindex="-1" class="container">
         <div class="row">
             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
                 <div class="col-md-4 widget-area d-sm-none d-md-inline-block" role="complementary" id="left-sidebar">

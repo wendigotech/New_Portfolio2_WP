@@ -14151,6 +14151,7 @@ img {
     color: inherit;
     line-height: 20px;
     display: inline-flex;
+    font-weight: 900;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -20658,4 +20659,5 @@ div-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: fit-content(40%);
+    grid-gap: 20px;
 }
