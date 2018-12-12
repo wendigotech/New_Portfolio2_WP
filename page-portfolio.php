@@ -26,10 +26,14 @@ get_header(); ?>
                             <title><?php _e( 'navarrow', 'wdg1' ); ?></title>
                             <polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
                         </symbol>
-                    </svg><?php if ( have_posts() ) : ?><main <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                        <?php while ( have_posts() ) : the_post(); ?><div class="slideshow">
+                    </svg><?php
+            $portfolio_args = array(
+                'category_name' => 'portfolio'
+            )
+        ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><main>
+                        <div class="slideshow">
                             <div class="slideshow__deco"></div>
-                            <div class="slide">
+                            <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
                                 <div class="slide__img-wrap">
                                     <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                                 </div>
@@ -39,7 +43,7 @@ get_header(); ?>
                                     <h3 class="slide__title"><?php the_title(); ?></h3>
                                     <?php the_excerpt( ); ?>
                                 </div>
-                            </div>
+                            </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                             <div class="slide">
                                 <div class="slide__img-wrap">
                                     <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
@@ -94,26 +98,14 @@ get_header(); ?>
                                     <h3 class="slide__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
                                     <h4 class="slide__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
                                 </div>
-                            </div>
-                            <button class="nav nav--prev">
-                                <svg class="icon icon--navarrow-prev">
-                                    <use xlink:href="#icon-navarrow"></use>
-                                </svg>
-                            </button>
-                            <button class="nav nav--next">
-                                <svg class="icon icon--navarrow-next">
-                                    <use xlink:href="#icon-navarrow"></use>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="content">
+                            </div><div class="content">
+
                             <div class="content__item">
                                 <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php the_title(); ?></h3>
                                 <?php the_excerpt( ); ?>
                                 <div class="content__text"><?php the_content(); ?></div>
-                            </div>
-                            <div class="content__item">
+                            </div><div class="content__item">
                                 <span class="content__number"><?php _e( '2', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
                                 <h4 class="content__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
@@ -148,7 +140,19 @@ get_header(); ?>
                                     <use xlink:href="#icon-longarrow"></use>
                                 </svg>
                             </button>
-                        </div><?php endwhile; ?>
+                        </div>
+                            <button class="nav nav--prev">
+                                <svg class="icon icon--navarrow-prev">
+                                    <use xlink:href="#icon-navarrow"></use>
+                                </svg>
+                            </button>
+                            <button class="nav nav--next">
+                                <svg class="icon icon--navarrow-next">
+                                    <use xlink:href="#icon-navarrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+
                     </main><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
     </div>
 </div>
