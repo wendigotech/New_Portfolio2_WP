@@ -491,6 +491,7 @@ a:focus {
     width: 100%;
     position: relative;
     z-index: 1000;
+    background-color: rgba(20, 18, 18, 0.52);
 }
 
 .slide__number {

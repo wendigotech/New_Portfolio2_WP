@@ -35,10 +35,10 @@ get_header(); ?>
                             <div class="slideshow__deco"></div>
                             <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
                                 <div class="slide__img-wrap">
-                                    <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                    <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?></div>
-                                <div class="slide__title-wrap bg-dark">
+                                <div class="slide__title-wrap">
                                     <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
                                     <h3 class="slide__title"><?php the_title(); ?></h3>
                                     <?php the_excerpt( ); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
                             </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Random Roam', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
@@ -57,7 +57,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Arbitrary Words', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
@@ -68,7 +68,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Haunted Drift', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
@@ -79,7 +79,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Fun Diverge', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
@@ -90,7 +90,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
@@ -111,14 +111,18 @@ get_header(); ?>
                             </button>
                         </div>
 
-                    <?php if ( have_posts() ) : ?><div class="content">
+                    <?php
+                    $portfolio_args = array(
+                        'category_name' => 'portfolio'
+                    )
+                ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><div class="content">
 
-                            <?php while ( have_posts() ) : the_post(); ?><div class="content__item">
+                            <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="content__item">
                                 <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php the_title(); ?></h3>
                                 <?php the_excerpt( ); ?>
                                 <div class="content__text"><?php the_content(); ?></div>
-                            </div><?php endwhile; ?><div class="content__item">
+                            </div><?php endwhile; ?><?php wp_reset_postdata(); ?><div class="content__item">
                                 <span class="content__number"><?php _e( '2', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
                                 <h4 class="content__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
