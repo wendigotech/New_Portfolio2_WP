@@ -388,7 +388,6 @@ a:focus {
 
 .slideshow__deco {
     grid-area: slide;
-    background: var(--color-deco);
     width: 100%;
     height: 80%;
     -ms-flex-item-align: center;
@@ -396,6 +395,7 @@ a:focus {
     position: relative;
     margin: -40px 0 0 0;
     right: -20px;
+    background-color: rgba(20, 19, 19, 0.49);
 }
 
 .nav {
