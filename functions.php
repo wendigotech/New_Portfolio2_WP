@@ -273,9 +273,6 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
     wp_deregister_style( 'woocommerce' );
     wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/css/woocommerce.css', false, null, 'all');
 
-    wp_deregister_style( 'base' );
-    wp_enqueue_style( 'base', get_template_directory_uri() . '/base.css', false, null, 'all');
-
     wp_deregister_style( 'blkdesignsystem' );
     wp_enqueue_style( 'blkdesignsystem', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/css/blk-design-system.min.css', false, null, 'all');
 
@@ -287,6 +284,9 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
 
     wp_deregister_style( 'theme' );
     wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css', false, null, 'all');
+
+    wp_deregister_style( 'base' );
+    wp_enqueue_style( 'base', get_template_directory_uri() . '/base.css', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
