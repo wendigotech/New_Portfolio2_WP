@@ -26,24 +26,20 @@ get_header(); ?>
                             <title><?php _e( 'navarrow', 'wdg1' ); ?></title>
                             <polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
                         </symbol>
-                    </svg><?php
-            $portfolio_args = array(
-                'category_name' => 'portfolio'
-            )
-        ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><main>
+                    </svg><main>
                         <div class="slideshow">
                             <div class="slideshow__deco"></div>
-                            <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
+                            <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?></div>
                                 <div class="slide__title-wrap">
                                     <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
-                                    <h3 class="slide__title"><?php the_title(); ?></h3>
-                                    <?php the_excerpt( ); ?>
+                                    <h3 class="slide__title"><?php _e( 'Automation', 'wdg1' ); ?></h3>
+                                    <h4 class="slide__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
                                 </div>
-                            </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
+                            </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
                                     <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
@@ -111,18 +107,14 @@ get_header(); ?>
                             </button>
                         </div>
 
-                    <?php
-                    $portfolio_args = array(
-                        'category_name' => 'portfolio'
-                    )
-                ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><div class="content">
+                    <div class="content">
 
-                            <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="content__item">
+                            <div class="content__item">
                                 <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
-                                <h3 class="content__title"><?php the_title(); ?></h3>
-                                <?php the_excerpt( ); ?>
-                                <?php the_content(); ?>
-                            </div><?php endwhile; ?><?php wp_reset_postdata(); ?><div class="content__item">
+                                <h3 class="content__title"><?php _e( 'Automation', 'wdg1' ); ?></h3>
+                                <h4 class="content__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
+                                <div class="content__text"><?php _e( 'Just let this happen. We just let this flow right out of our minds. Just relax and let it flow. That easy. Let\'s put some happy little clouds in our world. It\'s a very cold picture, I may have to go get my coat. It’s about to freeze me to death. This is gonna be a happy little seascape. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?></div>
+                            </div><div class="content__item">
                                 <span class="content__number"><?php _e( '2', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
                                 <h4 class="content__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
@@ -157,7 +149,7 @@ get_header(); ?>
                                     <use xlink:href="#icon-longarrow"></use>
                                 </svg>
                             </button>
-                        </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?></main><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
+                        </div></main>
     </div>
 </div>
 
