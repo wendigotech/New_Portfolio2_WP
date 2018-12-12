@@ -7,12 +7,8 @@
 get_header(); ?>
 
 <div id="page-wrapper" class="wrapper">
-    <div class="container" id="content" tabindex="-1">
-        <div class="row">
-            <div class="content-area col-md-12" id="primary">
-                <main class="site-main" id="main">
-
-                <svg class="hidden">
+    <div id="content" tabindex="-1" class="container-fluid mt-5 ">
+        <svg class="hidden">
                         <symbol id="icon-arrow" viewbox="0 0 24 24">
                             <title><?php _e( 'arrow', 'wdg1' ); ?></title>
                             <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
@@ -153,9 +149,7 @@ get_header(); ?>
                                 </svg>
                             </button>
                         </div>
-                    </main></main>                                 
-            </div>
-        </div>
+                    </main>
     </div>
 </div>
 
