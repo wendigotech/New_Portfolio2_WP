@@ -12,13 +12,11 @@ get_header(); ?>
 <div class="wrapper" id="index-wrapper">
     <div id="content" tabindex="-1" class="container">
         <div class="row">
-            <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
-                <div class="col-md-4 widget-area d-sm-none d-md-inline-block d-none" role="complementary" id="left-sidebar">
-                    <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
-                        <?php dynamic_sidebar( 'left-sidebar' ); ?>
-                    <?php endif; ?> 
-                </div>
-            <?php endif; ?>
+            <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?><div class="col-md-4 widget-area d-sm-none d-md-inline-block d-none" role="complementary" id="left-sidebar">
+                <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?><?php dynamic_sidebar( 'left-sidebar' ); ?><?php endif; ?>
+
+
+            </div><?php endif; ?>
             <div class="col-md-8 content-area col-sm-12" id="primary">
                 <main class="site-main" id="main">
                     <?php get_template_part( 'loop-templates/content' ); ?>
@@ -29,6 +27,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</div>                
+</div>
+
 
 <?php get_footer(); ?>

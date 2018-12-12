@@ -1,16 +1,13 @@
-
-            </div>
-            <?php if ( is_active_sidebar( 'footerfull' ) ) : ?>
-                <div class="wrapper" id="wrapper-footer-full">
-                    <div id="footer-full-content" tabindex="-1" class="container">
-                        <div class="row">
-                            <?php if ( is_active_sidebar( 'footerfull' ) ) : ?>
-                                <?php dynamic_sidebar( 'footerfull' ); ?>
-                            <?php endif; ?>
-                        </div>
+</div>
+            <?php if ( is_active_sidebar( 'footerfull' ) ) : ?><div class="wrapper" id="wrapper-footer-full">
+                <div id="footer-full-content" tabindex="-1" class="container">
+                    <div class="row">
+                        <?php if ( is_active_sidebar( 'footerfull' ) ) : ?><?php dynamic_sidebar( 'footerfull' ); ?><?php endif; ?>
+                        
+                        
                     </div>
                 </div>
-            <?php endif; ?>
+            </div><?php endif; ?>
             <div class="wrapper" id="wrapper-footer">
                 <div class="container">
                     <div class="row">
@@ -29,6 +26,20 @@
                 <!-- container end -->
             </div>
         </div>
-        <?php wp_footer(); ?>
-    </body>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <?php wp_footer(); ?></body>
 </html>
