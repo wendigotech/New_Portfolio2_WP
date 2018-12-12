@@ -38,7 +38,7 @@ get_header(); ?>
                                     <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                                 </div>
                                 <div class="slide__side"><?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?></div>
-                                <div class="slide__title-wrap">
+                                <div class="slide__title-wrap bg-dark">
                                     <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
                                     <h3 class="slide__title"><?php the_title(); ?></h3>
                                     <?php the_excerpt( ); ?>
@@ -98,14 +98,27 @@ get_header(); ?>
                                     <h3 class="slide__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
                                     <h4 class="slide__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
                                 </div>
-                            </div><div class="content">
+                            </div>
+                            <button class="nav nav--prev">
+                                <svg class="icon icon--navarrow-prev">
+                                    <use xlink:href="#icon-navarrow"></use>
+                                </svg>
+                            </button>
+                            <button class="nav nav--next">
+                                <svg class="icon icon--navarrow-next">
+                                    <use xlink:href="#icon-navarrow"></use>
+                                </svg>
+                            </button>
+                        </div>
 
-                            <div class="content__item">
+                    <?php if ( have_posts() ) : ?><div class="content">
+
+                            <?php while ( have_posts() ) : the_post(); ?><div class="content__item">
                                 <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php the_title(); ?></h3>
                                 <?php the_excerpt( ); ?>
                                 <div class="content__text"><?php the_content(); ?></div>
-                            </div><div class="content__item">
+                            </div><?php endwhile; ?><div class="content__item">
                                 <span class="content__number"><?php _e( '2', 'wdg1' ); ?></span>
                                 <h3 class="content__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
                                 <h4 class="content__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
@@ -140,20 +153,7 @@ get_header(); ?>
                                     <use xlink:href="#icon-longarrow"></use>
                                 </svg>
                             </button>
-                        </div>
-                            <button class="nav nav--prev">
-                                <svg class="icon icon--navarrow-prev">
-                                    <use xlink:href="#icon-navarrow"></use>
-                                </svg>
-                            </button>
-                            <button class="nav nav--next">
-                                <svg class="icon icon--navarrow-next">
-                                    <use xlink:href="#icon-navarrow"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                    </main><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
+                        </div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?></main><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
     </div>
 </div>
 
