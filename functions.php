@@ -230,6 +230,15 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
 
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', null, null, true );
 
+    wp_deregister_script( 'noise' );
+    wp_enqueue_script( 'noise', get_template_directory_uri() . '/assets/js/noise.min.js', false, null, true);
+
+    wp_deregister_script( 'util' );
+    wp_enqueue_script( 'util', get_template_directory_uri() . '/assets/js/util.js', false, null, true);
+
+    wp_deregister_script( 'swirl' );
+    wp_enqueue_script( 'swirl', get_template_directory_uri() . '/assets/js/swirl.js', false, null, true);
+
     wp_deregister_script( 'demo' );
     wp_enqueue_script( 'demo', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/demo/demo.js', false, null, true);
 

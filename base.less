@@ -478,7 +478,7 @@ a:focus {
     width: 100%;
     height: calc(100% - 10rem);
     pointer-events: none;
-    z-index: 100;
+    z-index: -2;
 }
 
 .content__item {
@@ -580,7 +580,7 @@ a:focus {
 
     .slideshow {
         height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 27% 27% 27%;
         grid-column-gap: 9.5%;
         display: grid;
         grid-gap: 20px;
@@ -666,4 +666,11 @@ a:focus {
         max-width: 600px;
         text-align: justify;
     }
+}
+
+.frame {
+    padding: 3rem 5vw;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
 }
