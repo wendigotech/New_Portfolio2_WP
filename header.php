@@ -28,7 +28,9 @@
                     <div class="container">
                         <div class="navbar-translate">
                             
-                            <?php echo get_home_url(); ?>
+                            <a href="<?php echo esc_url( home_url() ); ?>" rel="home">
+    <img width="200" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png"/>
+</a>
                             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-bar bar1"></span>
                                 <span class="navbar-toggler-bar bar2"></span>
@@ -39,7 +41,7 @@
                             <div class="navbar-collapse-header">
                                 <div class="row">
                                     <div class="col-6 collapse-brand">
-                                        <a href="#" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200"/>
+                                        <a href="<?php echo esc_url( home_url() ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200"/>
                  </a>
                                     </div>
                                     <div class="col-6 collapse-close text-right">
