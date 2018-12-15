@@ -31,7 +31,7 @@ get_header(); ?>
                             <div class="slideshow__deco"></div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -42,7 +42,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -53,7 +53,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -64,7 +64,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -75,7 +75,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -86,7 +86,7 @@ get_header(); ?>
                             </div>
                             <div class="slide">
                                 <div class="slide__img-wrap">
-                                    <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                                    <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">

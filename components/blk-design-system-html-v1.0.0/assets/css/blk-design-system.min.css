@@ -12959,7 +12959,6 @@ fieldset[disabled] .btn-simple:hover {
 .footer .nav {
     float: left;
     margin-bottom: 0;
-    padding-top: 25px;
     list-style: none;
 }
 
@@ -14675,6 +14674,7 @@ h6 {
 p {
     color: hsla(0,0%,100%,.8);
     margin-bottom: 5px;
+    font-family: Poppins;
 }
 
 p.description {

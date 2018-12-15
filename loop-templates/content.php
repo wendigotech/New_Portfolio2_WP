@@ -2,7 +2,7 @@
     <div class="content1">
         <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
-                <article <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">
+                <article style="background-color: rgba(31, 34, 81, 0.75);" <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">
                     <header class="entry-header">
                         <?php if ( is_singular() ) : ?>
                             <h2><?php the_title(); ?></h2>
