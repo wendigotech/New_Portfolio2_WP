@@ -20669,3 +20669,7 @@ article:hover {
     margin-left: 5px;
     margin-top: 6px;
 }
+
+article img {
+    padding: 5px;
+}
