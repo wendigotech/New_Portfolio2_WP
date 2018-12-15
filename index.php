@@ -13,7 +13,22 @@ get_header(); ?>
     <div id="content" tabindex="-1" class="container">
         <div class="row">
             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?><div class="col-md-4 widget-area d-sm-none d-md-inline-block d-none" role="complementary" id="left-sidebar">
-                <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?><?php dynamic_sidebar( 'left-sidebar' ); ?><?php endif; ?>
+                <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?><?php dynamic_sidebar( 'left-sidebar' ); ?><?php endif; ?><form method="get" id="searchform" action="https://wendigo.tech/" role="search">
+                        <label class="sr-only" for="s">
+                            <?php _e( 'Search', 'wdg1' ); ?>
+                        </label>
+                        <div class="input-group">
+                            <input class="field form-control" id="s" name="s" type="text" placeholder="Search …" value="">
+                            <span class="input-group-append"> <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit" value="Search"> </span>
+                        </div>
+                    </form><h3 class="widget-title"><?php _e( 'Recent Posts', 'wdg1' ); ?></h3><ul>
+                        <li>
+                            <a href="https://wendigo.tech/post2/"><?php _e( 'Post2', 'wdg1' ); ?></a>
+                        </li>
+                        <li>
+                            <a href="https://wendigo.tech/hello-world/"><?php _e( 'Hello world!', 'wdg1' ); ?></a>
+                        </li>
+                    </ul>
 
 
             </div><?php endif; ?>

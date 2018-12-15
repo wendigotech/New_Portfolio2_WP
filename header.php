@@ -41,8 +41,8 @@
                             <div class="navbar-collapse-header">
                                 <div class="row">
                                     <div class="col-6 collapse-brand">
-                                        <a>
-                <?php _e( 'WENDIGO', 'wdg1' ); ?> </a>
+                                        <a href="#" rel="home"><img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/white_logo_transparent_background.png" width="200"/>
+                 </a>
                                     </div>
                                     <div class="col-6 collapse-close text-right">
                                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
                             </div>
                             <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                         'menu' => 'primary',
-                                        'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto ',
+                                        'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto d-inline-flex',
                                         'container' => '',
                                         'depth' => '2',
                                         'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',

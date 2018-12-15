@@ -13,29 +13,21 @@
                     <div class="row">
                         <div class="col-md-3">
                             
-                        <?php the_custom_logo(); ?></div>
-                        <div class="col-md-6">
-                            <ul class="nav nav-justified">
-                                <li class="nav-item">
-                                    <a href="./index.html" class="nav-link">
-                  <?php _e( 'Home', 'wdg1' ); ?> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./examples/landing-page.html" class="nav-link">
-                  <?php _e( 'Landing', 'wdg1' ); ?> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./examples/register-page.html" class="nav-link">
-                  <?php _e( 'Register', 'wdg1' ); ?> </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./examples/profile-page.html" class="nav-link">
-                  <?php _e( 'Profile', 'wdg1' ); ?> </a>
-                                </li>
-                            </ul>
+                        <a href="#" rel="home" class="">
+                                <img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/white_logo_transparent_background.png" width="200" class="pt-4"/>
+                            </a></div>
+                        <div class="col-md-6 flex-column">
+                            <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
+                                        'menu' => 'secondary',
+                                        'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto',
+                                        'container' => '',
+                                        'depth' => '2',
+                                        'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
+                                        'walker' => new wp_bootstrap4_navwalker()
+                                ) ); ?><?php endif; ?>
                         </div>
                         
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-flex flex-column align-content-center align-items-center">
                             <h3 class="title"><?php _e( 'Follow us:', 'wdg1' ); ?></h3>
                             <div class="btn-wrapper profile">
                                 <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> <i class="fab fa-twitter"></i> </a>

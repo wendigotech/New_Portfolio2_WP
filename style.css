@@ -27,8 +27,8 @@ This file is just used to identify the theme in WordPress.
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: rgba(31, 34, 81, 0.75);
-    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 div-content {
