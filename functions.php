@@ -100,21 +100,21 @@ function st2_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Bottom Full', 'wdg1' ),
-        'id' => 'footerfull',
-        'description' => 'Full bottom widget with dynamic grid',
-        'before_widget' => '<div id="%1$s" class="footer-widget %2$s '. st2_slbd_count_widgets( 'footerfull' ) .'">',
-        'after_widget' => '</div><!-- .footer-widget -->',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>'
-    ) );
-
-    register_sidebar( array(
         'name' => __( 'Right Sidebar', 'wdg1' ),
         'id' => 'right-sidebar',
         'description' => 'Right Sidebar widget area',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Bottom Full', 'wdg1' ),
+        'id' => 'footerfull',
+        'description' => 'Full bottom widget with dynamic grid',
+        'before_widget' => '<div id="%1$s" class="footer-widget %2$s '. st2_slbd_count_widgets( 'footerfull' ) .'">',
+        'after_widget' => '</div><!-- .footer-widget -->',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>'
     ) );
@@ -152,28 +152,6 @@ function st2_customize_register( $wp_customize ) {
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
-    $wp_customize->add_setting( 'jumbotron_heading_color', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_heading_color', array(
-        'label' => __( 'Jumbotron Heading Color', 'wdg1' ),
-        'type' => 'color',
-        'section' => 'header_settings'
-    ) ) );
-
-    $wp_customize->add_setting( 'jumbotron_text_color', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_text_color', array(
-        'label' => __( 'Jumbotron Paragraph Color', 'wdg1' ),
-        'type' => 'color',
-        'section' => 'header_settings'
-    ) ) );
-
     $wp_customize->add_setting( 'show_left_sidebar', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -197,6 +175,28 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'checkbox',
         'section' => 'theme_settings'
     ));
+
+    $wp_customize->add_setting( 'jumbotron_heading_color', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_heading_color', array(
+        'label' => __( 'Jumbotron Heading Color', 'wdg1' ),
+        'type' => 'color',
+        'section' => 'header_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'jumbotron_text_color', array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_text_color', array(
+        'label' => __( 'Jumbotron Paragraph Color', 'wdg1' ),
+        'type' => 'color',
+        'section' => 'header_settings'
+    ) ) );
 
     $wp_customize->add_setting( 'footer_text', array(
         'type' => 'theme_mod',
