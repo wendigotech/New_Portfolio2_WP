@@ -28,6 +28,7 @@ This file is just used to identify the theme in WordPress.
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: rgba(31, 34, 81, 0.75);
+    border-radius: 4px;
 }
 
 div-content {
