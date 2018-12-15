@@ -29,7 +29,7 @@
                         <div class="navbar-translate">
                             
                             <a href="#" rel="home" class="lrg-logo">
-    <img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/white_logo_transparent_background.png" width="200"/>
+    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200"/>
 </a>
                             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-bar bar1"></span>
@@ -41,7 +41,7 @@
                             <div class="navbar-collapse-header">
                                 <div class="row">
                                     <div class="col-6 collapse-brand">
-                                        <a href="#" rel="home"><img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/white_logo_transparent_background.png" width="200"/>
+                                        <a href="#" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200"/>
                  </a>
                                     </div>
                                     <div class="col-6 collapse-close text-right">

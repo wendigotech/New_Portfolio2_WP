@@ -14,7 +14,7 @@
                         <div class="col-md-3">
                             
                         <a href="#" rel="home" class="">
-                                <img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/white_logo_transparent_background.png" width="200" class="pt-4"/>
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200" class="pt-4"/>
                             </a></div>
                         <div class="col-md-6 flex-column">
                             <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
