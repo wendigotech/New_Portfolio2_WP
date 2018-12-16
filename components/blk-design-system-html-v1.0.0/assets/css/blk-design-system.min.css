@@ -8234,7 +8234,7 @@ button.bg-darker:hover {
 
 .mt-5,
 .my-5 {
-    margin-top: 3rem!important;
+    margin-top: 3rem !important;
 }
 
 .mr-5,
@@ -8474,7 +8474,7 @@ button.bg-darker:hover {
 
 .pt-5,
 .py-5 {
-    padding-top: 3rem!important;
+    padding-top: 3rem !important;
 }
 
 .pr-5,
@@ -14598,7 +14598,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: hsla(0,0%,100%,.8);
+    color: rgba(255, 255, 255, 0.92);
 }
 
 h1,

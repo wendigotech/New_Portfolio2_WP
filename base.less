@@ -190,6 +190,7 @@ table {
 *::after,
 *::before {
     box-sizing: border-box;
+    color: #ffffff;
 }
 
 /* Page Loader */
@@ -368,7 +369,7 @@ a:focus {
     align-self: center;
     position: relative;
     margin: -40px 0 0 0;
-    right: -20px;
+    right: -60px;
     background-color: rgba(20, 19, 19, 0.49);
 }
 
@@ -587,7 +588,7 @@ a:focus {
     }
 
     .slide {
-        padding: 10vh 0 7vh;
+        padding: 10vh 0 20vh;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -629,6 +630,8 @@ a:focus {
     .content {
         top: 0;
         height: 100%;
+        position: fixed;
+        z-index: 100;
     }
 
     .content__item {
