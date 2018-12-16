@@ -29,7 +29,7 @@
                         <div class="navbar-translate">
                             
                             <a href="<?php echo esc_url( home_url() ); ?>" rel="home">
-    <img width="200" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png"/>
+    <img width="200" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" alt="Wendigo logo"/>
 </a>
                             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-bar bar1"></span>
@@ -41,7 +41,7 @@
                             <div class="navbar-collapse-header">
                                 <div class="row">
                                     <div class="col-6 collapse-brand">
-                                        <a href="<?php echo esc_url( home_url() ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200"/>
+                                        <a href="<?php echo esc_url( home_url() ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" width="200" alt="wendigo logo"/>
                  </a>
                                     </div>
                                     <div class="col-6 collapse-close text-right">

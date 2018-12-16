@@ -13,8 +13,8 @@
                     <div class="row">
                         <div class="col-md-3">
                             
-                        <a href="#" rel="home" class="">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/white_logo_transparent_background.png" width="200" class="pt-4"/>
+                        <a href="<?php echo esc_url( home_url() ); ?>" rel="home" class="">
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" width="200" alt="wendigo logo"/>
                             </a></div>
                         <div class="col-md-6 flex-column">
                             <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
