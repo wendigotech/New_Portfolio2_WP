@@ -29,7 +29,7 @@ This file is just used to identify the theme in WordPress.
     text-overflow: ellipsis;
     margin-left: 5px;
     margin-right: 5px;
-    max-height: 4em;
+    max-height: 5em;
 }
 
 div-content {
