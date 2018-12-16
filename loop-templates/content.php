@@ -10,13 +10,19 @@
                             <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
                         <?php endif; ?>
                     </header>
-                    <?php
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( 'large', array(
-                            'class' => 'mb-4'
-                        ) );
-                        }
-                     ?>
+                    <?php if ( is_singular() ) : ?>
+                        <?php
+                            if ( has_post_thumbnail() ) {
+                                the_post_thumbnail( 'large', array(
+                                'class' => 'mb-4'
+                            ) );
+                            }
+                         ?>
+                    <?php elseif ( has_post_thumbnail( get_the_ID() ) ) : ?>
+                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail( 'large', array(
+                                    'class' => 'mb-4'
+                            ) ); ?></a>
+                    <?php endif; ?>
                     <div class="entry-content">
                         <?php the_excerpt( ); ?>
                     </div>
