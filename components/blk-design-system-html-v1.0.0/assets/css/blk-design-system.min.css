@@ -9631,7 +9631,7 @@ button.bg-darker:hover {
 
     .mt-lg-0,
     .my-lg-0 {
-        margin-top: 0!important;
+        margin-top: 0 !important;
     }
 
     .mr-lg-0,
@@ -12974,6 +12974,8 @@ fieldset[disabled] .btn-simple:hover {
     padding: 10px 0;
     font-size: .75rem;
     text-transform: uppercase;
+    font-family: Poppins;
+    font-weight: 900;
 }
 
 .footer .nav-link,

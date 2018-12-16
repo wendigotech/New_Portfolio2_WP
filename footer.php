@@ -11,15 +11,15 @@
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-flex justify-content-center mt-md-0 align-items-end mt-3 mb-md-2">
                             
                         <a href="<?php echo esc_url( home_url() ); ?>" rel="home" class="">
                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" width="200" alt="wendigo logo"/>
                             </a></div>
-                        <div class="col-md-6 flex-column">
+                        <div class="col-md-6">
                             <?php if ( has_nav_menu( 'primary' ) ) : ?><?php wp_nav_menu( array(
                                         'menu' => 'secondary',
-                                        'menu_class' => 'navbar-nav mt-2 mt-lg-0 ml-auto',
+                                        'menu_class' => 'navbar-nav ml-auto d-flex flex-row mt-2 mt-lg-5 mt-md-5 justify-content-around',
                                         'container' => '',
                                         'depth' => '2',
                                         'fallback_cb' => 'wp_bootstrap4_navwalker::fallback',
@@ -27,12 +27,12 @@
                                 ) ); ?><?php endif; ?>
                         </div>
                         
-                        <div class="col-md-3 d-flex flex-column align-content-center align-items-center">
-                            <h3 class="title"><?php _e( 'Follow us:', 'wdg1' ); ?></h3>
+                        <div class="col-md-3 d-flex justify-content-end align-items-end">
+                            
                             <div class="btn-wrapper profile">
-                                <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> <i class="fab fa-twitter"></i> </a>
-                                <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us"> <i class="fab fa-facebook-square"></i> </a>
-                                <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> <i class="fab fa-dribbble"></i> </a>
+                                <a target="_blank" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us" href="https://www.instagram.com/wendigotech/?hl=en"> <i class="fab fa-instagram"></i> </a>
+                                <a target="_blank" href="https://www.behance.net/wendigotecc003" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us"> <i class="fab fa-behance"></i> </a>
+                                <a target="_blank" href="https://dribbble.com/boncis" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us"> <i class="fab fa-dribbble"></i> </a>
                             </div>
                         </div>
                     </div>
