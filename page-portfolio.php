@@ -26,17 +26,17 @@ get_header(); ?>
                             <title><?php _e( 'navarrow', 'wdg1' ); ?></title>
                             <polygon fill="#fff" fill-rule="nonzero" points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"></polygon>
                         </symbol>
-                    </svg><?php
-            $portfolio_args = array(
-                'category_name' => 'portfolio',
-                'order' => 'DESC'
-            )
-        ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><main <?php post_class( 'mt-5 pt-5' ); ?> id="post-<?php the_ID(); ?>">
-                        <div class="slideshow">
+                    </svg><main class="mt-5 pt-5">
+                        <?php
+                $portfolio_args = array(
+                    'category_name' => 'portfolio',
+                    'order' => 'DESC'
+                )
+            ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><div class="slideshow">
                             <div class="slideshow__deco"></div>
                             <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
                                 <div class="slide__img-wrap">
-                                    <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                    <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?><div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                                 </div>
 
                                 <div class="slide__title-wrap">
@@ -60,9 +60,7 @@ get_header(); ?>
                                     <use xlink:href="#icon-navarrow"></use>
                                 </svg>
                             </button>
-                        </div>
-
-                    <div class="content">
+                        <div class="content">
 
                             <div class="content__item">
                                 <?php the_tags(); ?>
@@ -79,7 +77,9 @@ get_header(); ?>
                                     <use xlink:href="#icon-longarrow"></use>
                                 </svg>
                             </button>
-                        </div></main><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
+                        </div></div><?php else : ?><p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p><?php endif; ?>
+
+                    </main>
     </div>
 </div>
 

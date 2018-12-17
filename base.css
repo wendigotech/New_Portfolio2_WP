@@ -379,7 +379,7 @@ a:focus {
 }
 
 .slide__img-wrap {
-    width: 100%;
+    width: 110%;
     overflow: hidden;
     z-index: 100;
     height: 80%;
@@ -729,4 +729,8 @@ a:focus {
     text-align: center;
     position: relative;
     z-index: 1000;
+}
+
+.content--canvas {
+    z-index: -1;
 }

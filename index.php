@@ -12,7 +12,7 @@ get_header(); ?>
 <div class="wrapper" id="index-wrapper">
     <div id="content" tabindex="-1" class="container">
         <div class="row">
-            <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?><div class="col-md-4 widget-area d-sm-none d-md-inline-block d-none" role="complementary" id="left-sidebar">
+            <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?><div class="col-md-4 widget-area d-sm-none d-none d-md-inline-block" role="complementary" id="left-sidebar">
                 <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?><?php dynamic_sidebar( 'left-sidebar' ); ?><?php endif; ?><h3 class="widget-title"><?php _e( 'Recent Posts', 'wdg1' ); ?></h3>
 
 
