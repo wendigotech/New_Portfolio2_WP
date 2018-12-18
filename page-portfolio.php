@@ -57,19 +57,6 @@ get_header(); ?>
                     <?php endwhile; ?>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
-                        </div>
-                        <div class="slide__title-wrap">
-                            <span class="slide__number"><?php _e( '4', 'wdg1' ); ?></span>
-                            <h3 class="slide__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
-                            <h4 class="slide__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
-                        </div>
-                        <div class="slide__side">
-                            <?php _e( 'Haunted Drift', 'wdg1' ); ?>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__img-wrap">
                             <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__title-wrap">
