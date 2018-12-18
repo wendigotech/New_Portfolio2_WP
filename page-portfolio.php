@@ -57,19 +57,6 @@ get_header(); ?>
                     <?php endwhile; ?>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
-                        </div>
-                        <div class="slide__title-wrap">
-                            <span class="slide__number"><?php _e( '5', 'wdg1' ); ?></span>
-                            <h3 class="slide__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
-                            <h4 class="slide__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
-                        </div>
-                        <div class="slide__side">
-                            <?php _e( 'Fun Diverge', 'wdg1' ); ?>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__img-wrap">
                             <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__title-wrap">
