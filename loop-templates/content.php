@@ -1,39 +1,35 @@
 
-    <?php if ( have_posts() ) : ?>
-        <?php while ( have_posts() ) : the_post(); ?>
-            <article <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">
-                <header class="entry-header">
+    <div class="content1">
+        <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <article <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">
+                    <header class="entry-header">
+                        <?php if ( is_singular() ) : ?>
+                            <h2><?php the_title(); ?></h2>
+                        <?php else : ?>
+                            <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
+                        <?php endif; ?>
+                    </header>
                     <?php if ( is_singular() ) : ?>
-                        <h2><?php the_title(); ?></h2>
-                    <?php else : ?>
-                        <h2><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h2>
+                        <?php
+                            if ( has_post_thumbnail() ) {
+                                the_post_thumbnail( 'large', array(
+                                'class' => 'mb-4'
+                            ) );
+                            }
+                         ?>
+                    <?php elseif ( has_post_thumbnail( get_the_ID() ) ) : ?>
+                        <a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail( 'large', array(
+                                    'class' => 'mb-4'
+                            ) ); ?></a>
                     <?php endif; ?>
-                    <div class="entry-meta">
-                        <p><?php _e( 'Posted on', 'wdg1' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'wdg1' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
+                    <div class="entry-content">
+                        <?php the_excerpt( ); ?>
                     </div>
-                </header>
-                <?php
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail( 'large', array(
-                        'class' => 'mb-4'
-                    ) );
-                    }
-                 ?>
-                <div class="entry-content">
-                    <?php the_excerpt( ); ?>
-                    <a class="btn btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
-                </div>
-                <footer class="entry-footer"></footer>
-            </article>
-        <?php endwhile; ?>
-    <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
-    <?php endif; ?>
-    <nav aria-label="Posts navigation">
-        <div class="card-body">
-            <div class="chart-area">
-                <canvas id="chartBig"></canvas>
-            </div>
-        </div>
-        <?php posts_nav_link( null, __( '&#xAB; Newer Posts', 'wdg1' ), __( 'Older Posts &#xBB;', 'wdg1' ) ); ?>
-    </nav>
+                    <a class="btn btn-primary float-right" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
+                </article>
+            <?php endwhile; ?>
+        <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
+        <?php endif; ?>
+    </div>

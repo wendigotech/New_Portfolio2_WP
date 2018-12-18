@@ -21,3 +21,27 @@ jQuery: https://jquery.org | (Code licensed under MIT)
 This file is just used to identify the theme in WordPress.
 */
 /* Don't add custom styles here, but in assets/sass/theme.scss */
+.entry-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 5em;
+}
+
+div-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(40%);
+    grid-gap: 10px;
+}
+
+div-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(40%);
+    grid-gap: 10px;
+}
