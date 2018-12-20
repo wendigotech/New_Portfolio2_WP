@@ -28,9 +28,13 @@ get_header(); ?>
             </symbol>
         </svg>
         <main class="mt-5 pt-5">
-            <?php if ( have_posts() ) : ?><div <?php post_class( 'slideshow' ); ?> id="post-<?php the_ID(); ?>">
+            <?php
+                $portfolio_args = array(
+                    'category_name' => 'portfolio'
+                )
+            ?><?php $portfolio = new WP_Query( $portfolio_args ); ?><?php if ( $portfolio->have_posts() ) : ?><div <?php post_class( 'slideshow' ); ?> id="post-<?php the_ID(); ?>">
                 <div class="slideshow__deco"></div>
-                <?php while ( have_posts() ) : the_post(); ?><div class="slide">
+                <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
                     <div class="slide__img-wrap">
                         <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?><div class="slide__img" style="background-image: url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                     </div>
@@ -40,7 +44,7 @@ get_header(); ?>
                         <?php the_excerpt( ); ?>
                     </div>
                     <div class="slide__side"><?php the_title(); ?></div>
-                </div><?php endwhile; ?>
+                </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
                 <div class="slide">
                     <div class="slide__img-wrap">
                         <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
