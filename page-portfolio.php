@@ -45,17 +45,7 @@ get_header(); ?>
                     </div>
                     <div class="slide__side"><?php the_title(); ?></div>
                 </div><?php endwhile; ?><?php wp_reset_postdata(); ?>
-                <div class="slide">
-                    <div class="slide__img-wrap">
-                        <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
-                    </div>
-                    <div class="slide__title-wrap">
-                        <span class="slide__number"><?php _e( '2', 'wdg1' ); ?></span>
-                        <h3 class="slide__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
-                        <h4 class="slide__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
-                    </div>
-                    <div class="slide__side"><?php _e( 'Random Roam', 'wdg1' ); ?></div>
-                </div>
+
                 <div class="slide">
                     <div class="slide__img-wrap">
                         <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
