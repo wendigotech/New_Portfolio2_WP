@@ -36,10 +36,10 @@ get_header(); ?>
                 <div class="slideshow__deco"></div>
                 <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?><div class="slide">
                     <div class="slide__img-wrap">
-                        <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?><div class="slide__img" style="background-image: url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal' ) : null; ?><div class="slide__img" style="background-image: url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                     </div>
                     <div class="slide__title-wrap">
-                        <span class="slide__number"><?php the_tags(); ?></span>
+                        <span class="slide__number"><?php single_tag_title(); ?></span>
                         <h3 class="slide__title"><?php the_title(); ?></h3>
                         <?php the_excerpt( ); ?>
                     </div>
@@ -48,7 +48,7 @@ get_header(); ?>
 
                 <div class="slide">
                     <div class="slide__img-wrap">
-                        <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                     </div>
                     <div class="slide__title-wrap">
                         <span class="slide__number"><?php _e( '3', 'wdg1' ); ?></span>
@@ -59,7 +59,7 @@ get_header(); ?>
                 </div>
                 <div class="slide">
                     <div class="slide__img-wrap">
-                        <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                     </div>
                     <div class="slide__title-wrap">
                         <span class="slide__number"><?php _e( '4', 'wdg1' ); ?></span>
@@ -70,7 +70,7 @@ get_header(); ?>
                 </div>
                 <div class="slide">
                     <div class="slide__img-wrap">
-                        <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                     </div>
                     <div class="slide__title-wrap">
                         <span class="slide__number"><?php _e( '5', 'wdg1' ); ?></span>
@@ -81,7 +81,7 @@ get_header(); ?>
                 </div>
                 <div class="slide">
                     <div class="slide__img-wrap">
-                        <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                     </div>
                     <div class="slide__title-wrap">
                         <span class="slide__number"><?php _e( '6', 'wdg1' ); ?></span>
