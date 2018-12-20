@@ -628,7 +628,7 @@ a:focus {
         grid-template-columns: 27% 27% 27%;
         grid-column-gap: 9.5%;
         display: grid;
-        grid-gap: 20px;
+        grid-gap: 100px;
     }
 
     .slide {
