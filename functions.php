@@ -176,6 +176,18 @@ function st2_customize_register( $wp_customize ) {
         'section' => 'theme_settings'
     ));
 
+    $wp_customize->add_setting( 'footer_text', array(
+        'type' => 'theme_mod',
+        'default' => 'Proudly powered by WordPress | Theme: Starter Theme 2 by Pinegrow 2018. (Version: 0.0.0)',
+        'sanitize_callback' => $pgwp_sanitize
+    ));
+
+    $wp_customize->add_control( 'footer_text', array(
+        'label' => __( 'Footer Content', 'wdg1' ),
+        'type' => 'textarea',
+        'section' => 'footer_settings'
+    ));
+
     $wp_customize->add_setting( 'jumbotron_heading_color', array(
         'type' => 'theme_mod',
         'sanitize_callback' => $pgwp_sanitize
@@ -197,18 +209,6 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'color',
         'section' => 'header_settings'
     ) ) );
-
-    $wp_customize->add_setting( 'footer_text', array(
-        'type' => 'theme_mod',
-        'default' => 'Proudly powered by WordPress | Theme: Starter Theme 2 by Pinegrow 2018. (Version: 0.0.0)',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( 'footer_text', array(
-        'label' => __( 'Footer Content', 'wdg1' ),
-        'type' => 'textarea',
-        'section' => 'footer_settings'
-    ));
 
     /* Pinegrow generated Customizer Controls End */
 
@@ -257,17 +257,6 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
     wp_deregister_script( 'bootstrapswitch' );
     wp_enqueue_script( 'bootstrapswitch', get_template_directory_uri() . '/components/blk-design-system-html-v1.0.0/assets/js/plugins/bootstrap-switch.js', false, null, true);
 
-    wp_deregister_script( 'imagesloadedpkgd' );
-    wp_enqueue_script( 'imagesloadedpkgd', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', false, null, true);
-
-    wp_deregister_script( 'charming' );
-    wp_enqueue_script( 'charming', get_template_directory_uri() . '/assets/js/charming.min.js', false, null, true);
-
-    wp_deregister_script( 'tweenmax' );
-    wp_enqueue_script( 'tweenmax', get_template_directory_uri() . '/assets/js/TweenMax.min.js', false, null, true);
-
-    wp_deregister_script( 'diagonal' );
-    wp_enqueue_script( 'diagonal', get_template_directory_uri() . '/assets/js/diagonal.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
 
