@@ -691,7 +691,7 @@ a:focus {
         padding: calc(15vh) 0 7vh;
         width: 50.5%;
         right: 7.5%;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .content__close {
