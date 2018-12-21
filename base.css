@@ -691,7 +691,7 @@ a:focus {
         padding: calc(15vh) 0 7vh;
         width: 50.5%;
         right: 7.5%;
-        overflow: auto;
+        overflow: scroll;
     }
 
     .content__close {
@@ -713,6 +713,7 @@ a:focus {
     .content__subtitle {
         font-size: 1.15rem;
         margin-bottom: 7.5vh;
+        color: #ffd600;
     }
 
     .content__text {
