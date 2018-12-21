@@ -21,12 +21,14 @@ get_header(); ?>
                             <div class="mt-4 mb-2"></div>
                             <h2 class="widget-title"><?php _e( 'Most Used Categories', 'wdg1' ); ?></h2>
                             <div class="widget widget_categories">
-                                <ul><?php wp_list_categories( array(
+                                <ul>
+                                    <?php wp_list_categories( array(
                                             'orderby' => 'count',
                                             'order' => 'DESC',
                                             'show_count' => true,
                                             'title_li' => ''
-                                    ) ); ?></ul>
+                                    ) ); ?>
+                                </ul>
                             </div>
                             <div class="mt-4 mb-2"></div>
                             <?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
@@ -39,7 +41,6 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</div>
-
+</div>                
 
 <?php get_footer(); ?>

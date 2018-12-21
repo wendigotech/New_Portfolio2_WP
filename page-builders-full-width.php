@@ -8,5 +8,4 @@ get_header( 'page-builders-full-width' ); ?>
 
 <?php get_template_part( 'loop-templates/content-page-builders' ); ?>
 
-
 <?php get_footer( 'page-builders-full-width' ); ?>
