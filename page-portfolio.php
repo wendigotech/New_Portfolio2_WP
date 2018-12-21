@@ -49,35 +49,20 @@ get_header(); ?>
                         <div class="slide">
                             <div class="slide__img-wrap">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </div>
-                            <div class="slide__side">
-                                <?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?>
-                            </div>
+                            <?php the_tags(); ?>
                             <div class="slide__title-wrap">
                                 <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
                                 <h3 class="slide__title"><?php the_title(); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
+                                <?php the_excerpt( ); ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
-                        </div>
-                        <div class="slide__side">
-                            <?php _e( 'Random Roam', 'wdg1' ); ?>
-                        </div>
-                        <div class="slide__title-wrap">
-                            <span class="slide__number"><?php _e( '2', 'wdg1' ); ?></span>
-                            <h3 class="slide__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
-                            <h4 class="slide__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
@@ -90,7 +75,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Haunted Drift', 'wdg1' ); ?>
@@ -103,7 +88,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Fun Diverge', 'wdg1' ); ?>
@@ -116,7 +101,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
@@ -141,17 +126,9 @@ get_header(); ?>
                         <div class="content__item">
                             <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
                             <h3 class="content__title"><?php the_title(); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
+                            <?php the_excerpt( ); ?>
                             <div class="content__text">
                                 <?php the_content(); ?>
-                            </div>
-                        </div>
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '2', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
-                            <div class="content__text">
-                                <?php _e( 'We\'re not trying to teach you a thing to copy. We\'re just here to teach you a technique, then let you loose into the world. Now, we\'re going to fluff this cloud. We don\'t have anything but happy trees here. Let\'s do that again. Use what you see, don\'t plan it. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
                             </div>
                         </div>
                         <div class="content__item">
