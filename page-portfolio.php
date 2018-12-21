@@ -62,6 +62,20 @@ get_header(); ?>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/cover_size/misty_mountain_cover.jpg');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php the_title(); ?></h3>
+                            <?php the_excerpt( ); ?>
+                        </div>
+                        <div class="slide__side">
+                            <?php the_tags(); ?>
+                        </div>
+                    </div>
                     <button class="nav nav--prev">
                         <svg class="icon icon--navarrow-prev">
                             <use xlink:href="#icon-navarrow"></use>
