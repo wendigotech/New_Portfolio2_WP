@@ -56,26 +56,10 @@ get_header(); ?>
                                 <h3 class="slide__title"><?php the_title(); ?></h3>
                                 <?php the_excerpt( ); ?>
                             </div>
-                            <div class="slide__side">
-                                <?php the_tags(); ?>
-                            </div>
+                            <?php the_tags(); ?>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
-                    <div class="slide">
-                        <div class="slide__img-wrap">
-                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/cover_size/misty_mountain_cover.jpg');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                        </div>
-                        <div class="slide__title-wrap">
-                            <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
-                            <h3 class="slide__title"><?php the_title(); ?></h3>
-                            <?php the_excerpt( ); ?>
-                        </div>
-                        <div class="slide__side">
-                            <?php the_tags(); ?>
-                        </div>
-                    </div>
                     <button class="nav nav--prev">
                         <svg class="icon icon--navarrow-prev">
                             <use xlink:href="#icon-navarrow"></use>
@@ -89,10 +73,10 @@ get_header(); ?>
                     <div class="content">
                         <div class="content__item">
                             <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Automation', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
+                            <h3 class="content__title"><?php the_title(); ?></h3>
+                            <?php the_excerpt( ); ?>
                             <div class="content__text">
-                                <?php _e( 'Just let this happen. We just let this flow right out of our minds. Just relax and let it flow. That easy. Let\'s put some happy little clouds in our world. It\'s a very cold picture, I may have to go get my coat. It’s about to freeze me to death. This is gonna be a happy little seascape. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                                <?php the_content(); ?>
                             </div>
                         </div>
                         <div class="content__item">
