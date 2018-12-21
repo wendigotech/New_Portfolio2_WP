@@ -49,7 +49,7 @@ get_header(); ?>
                         <div class="slide">
                             <div class="slide__img-wrap">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </div>
                             <div class="slide__side">
                                 <?php the_tags(); ?>
@@ -64,7 +64,7 @@ get_header(); ?>
                     <?php wp_reset_postdata(); ?>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
@@ -77,7 +77,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Haunted Drift', 'wdg1' ); ?>
@@ -90,7 +90,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Fun Diverge', 'wdg1' ); ?>
@@ -103,7 +103,7 @@ get_header(); ?>
                     </div>
                     <div class="slide">
                         <div class="slide__img-wrap">
-                            <div class="slide__img" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
                         </div>
                         <div class="slide__side">
                             <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
@@ -124,52 +124,54 @@ get_header(); ?>
                             <use xlink:href="#icon-navarrow"></use>
                         </svg>
                     </button>
-                    <div class="content">
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php the_title(); ?></h3>
-                            <?php the_excerpt( ); ?>
-                            <div class="content__text">
-                                <?php the_content(); ?>
+                    <div class="pg-empty-placeholder">
+                        <div class="content">
+                            <div class="content__item">
+                                <span class="content__number"><?php _e( '1', 'wdg1' ); ?></span>
+                                <h3 class="content__title"><?php the_title(); ?></h3>
+                                <?php the_excerpt( ); ?>
+                                <div class="content__text">
+                                    <?php the_content(); ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '3', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Coexistence', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'The only guide is your heart', 'wdg1' ); ?></h4>
-                            <div class="content__text">
-                                <?php _e( 'Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping. But we\'re not there yet, so we don\'t need to worry about it. Now let\'s put some happy little clouds in here. What the devil. A thin paint will stick to a thick paint. I\'m going to mix up a little color.', 'wdg1' ); ?> 
+                            <div class="content__item">
+                                <span class="content__number"><?php _e( '3', 'wdg1' ); ?></span>
+                                <h3 class="content__title"><?php _e( 'Coexistence', 'wdg1' ); ?></h3>
+                                <h4 class="content__subtitle"><?php _e( 'The only guide is your heart', 'wdg1' ); ?></h4>
+                                <div class="content__text">
+                                    <?php _e( 'Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping. But we\'re not there yet, so we don\'t need to worry about it. Now let\'s put some happy little clouds in here. What the devil. A thin paint will stick to a thick paint. I\'m going to mix up a little color.', 'wdg1' ); ?> 
+                                </div>
                             </div>
-                        </div>
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '4', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
-                            <div class="content__text">
-                                <?php _e( 'See. We take the corner of the brush and let it play back-and-forth. This is unplanned it really just happens. I\'m sort of a softy, I couldn\'t shoot Bambi except with a camera. I guess I\'m a little weird. I like to talk to trees and animals. That\'s okay though; I have more fun than most people. We\'ll play with clouds today. Didn\'t you know you had that much power? You can move mountains. You can do anything. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                            <div class="content__item">
+                                <span class="content__number"><?php _e( '4', 'wdg1' ); ?></span>
+                                <h3 class="content__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
+                                <h4 class="content__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
+                                <div class="content__text">
+                                    <?php _e( 'See. We take the corner of the brush and let it play back-and-forth. This is unplanned it really just happens. I\'m sort of a softy, I couldn\'t shoot Bambi except with a camera. I guess I\'m a little weird. I like to talk to trees and animals. That\'s okay though; I have more fun than most people. We\'ll play with clouds today. Didn\'t you know you had that much power? You can move mountains. You can do anything. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '5', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
-                            <div class="content__text">
-                                <?php _e( 'So often we avoid running water, and running water is a lot of fun. Everyone is going to see things differently - and that\'s the way it should be. A big strong tree needs big strong roots. Steve wants reflections, so let\'s give him reflections. We don\'t have to be committed. We are just playing here. Making all those little fluffies that live in the clouds. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                            <div class="content__item">
+                                <span class="content__number"><?php _e( '5', 'wdg1' ); ?></span>
+                                <h3 class="content__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
+                                <h4 class="content__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
+                                <div class="content__text">
+                                    <?php _e( 'So often we avoid running water, and running water is a lot of fun. Everyone is going to see things differently - and that\'s the way it should be. A big strong tree needs big strong roots. Steve wants reflections, so let\'s give him reflections. We don\'t have to be committed. We are just playing here. Making all those little fluffies that live in the clouds. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="content__item">
-                            <span class="content__number"><?php _e( '6', 'wdg1' ); ?></span>
-                            <h3 class="content__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
-                            <h4 class="content__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
-                            <div class="content__text">
-                                <?php _e( 'But we\'re not there yet, so we don\'t need to worry about it. Now let\'s put some happy little clouds in here. What the devil. A thin paint will stick to a thick paint. I\'m going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                            <div class="content__item">
+                                <span class="content__number"><?php _e( '6', 'wdg1' ); ?></span>
+                                <h3 class="content__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
+                                <h4 class="content__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
+                                <div class="content__text">
+                                    <?php _e( 'But we\'re not there yet, so we don\'t need to worry about it. Now let\'s put some happy little clouds in here. What the devil. A thin paint will stick to a thick paint. I\'m going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Let\'s go up in here, and start having some fun The least little bit can do so much. Work on one thing at a time. Don\'t get carried away - we have plenty of time. Put your feelings into it, your heart, it\'s your world. These trees are so much fun. I get started on them and I have a hard time stopping.', 'wdg1' ); ?>
+                                </div>
                             </div>
+                            <button class="content__close">
+                                <svg class="icon icon--longarrow">
+                                    <use xlink:href="#icon-longarrow"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <button class="content__close">
-                            <svg class="icon icon--longarrow">
-                                <use xlink:href="#icon-longarrow"></use>
-                            </svg>
-                        </button>
                     </div>
                 </div>
             </main>
