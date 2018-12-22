@@ -692,7 +692,9 @@ a:focus {
         padding: calc(15vh) 0 7vh;
         width: 50.5%;
         right: 7.5%;
-        overflow: hidden;
+        overflow: auto;
+        position: fixed;
+        z-index: -1;
     }
 
     .content__close {
