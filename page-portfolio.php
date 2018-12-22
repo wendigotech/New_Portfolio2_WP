@@ -57,7 +57,7 @@ get_header(); ?>
                             <div class="slide__title-wrap">
                                 <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
                                 <h3 class="slide__title"><?php the_title(); ?></h3>
-                                <h4 class="slide__subtitle"><?php the_excerpt( ); ?></h4>
+                                <?php the_excerpt( ); ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
