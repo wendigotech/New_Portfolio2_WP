@@ -26,7 +26,7 @@
                     <div class="entry-content">
                         <?php the_excerpt( ); ?>
                     </div>
-                    <a class="btn btn-primary float-right" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
+                    <a class="btn btn-primary float-right btn-sm" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>
                 </article>
             <?php endwhile; ?>
         <?php else : ?>

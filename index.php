@@ -4,9 +4,14 @@ get_header(); ?>
 <div class="pg-empty-placeholder content content--canvas"></div>
 <div>
     <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-3" style="color:<?php echo get_theme_mod( 'jumbotron_heading_color' ); ?> !important;"><?php _e( 'Starter Theme', 'wdg1' ); ?> <b><?php _e( '2', 'wdg1' ); ?></b></h1>
-            <p class="lead" style="color:<?php echo get_theme_mod( 'jumbotron_text_color' ); ?>;"><?php _e( 'Powered by Bootstrap 4 and SASS.', 'wdg1' ); ?></p>
+        <div class="row">
+            <div class="container col-lg-6 col-md-6 col-sm-7">
+                <h1 class="display-3"><?php _e( 'Design &amp; Develop&nbsp;&nbsp;', 'wdg1' ); ?><b><?php _e( 'UX, UI, XD, WordPress&nbsp;&nbsp;', 'wdg1' ); ?></b></h1>
+                <p class="lead" style="color:<?php echo get_theme_mod( 'jumbotron_text_color' ); ?>;"><?php _e( 'I Freelance as a Web dessigner and developer. I showcase stuff, curate usefull tools for Web professionals. Feel free to check out my Blog &amp; Portfolio.', 'wdg1' ); ?></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-5 container align-items-center d-flex">
+                <img src="file:///E:/Wendigo_new/OneDrive/Web_Design/Personal_Projects/New_Portfolio2/assets/gfx/operating_system.svg"/>
+            </div>
         </div>
     </div>
 </div>

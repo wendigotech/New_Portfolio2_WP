@@ -5379,6 +5379,8 @@ input[type=submit].btn-block {
     padding: -2rem 1rem 2rem;
     margin-top: 5%;
     background-color: rgba(151, 45, 45, 0);
+    background-position: right bottom;
+    background-size: contain;
 }
 
 @media (min-width:576px){
@@ -14624,6 +14626,8 @@ a:hover {
 h1 {
     line-height: 1.05;
     margin-bottom: 30px;
+    font-family: Poppins;
+    text-shadow: 2px 2px 8px;
 }
 
 .h1 small,
