@@ -14627,7 +14627,7 @@ h1 {
     line-height: 1.05;
     margin-bottom: 30px;
     font-family: Poppins;
-    text-shadow: 2px 2px 8px;
+    text-shadow: 2px 2px 8px, 1px 1px 3px #fff;
 }
 
 .h1 small,
@@ -20143,7 +20143,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 }
 
 .card {
-    background: #1f2251;
+    background: rgba(31, 34, 81, 0);
     border: 0;
     position: relative;
     width: 100%;
@@ -20655,7 +20655,7 @@ div-content {
 .content1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content(40%);
+    grid-template-rows: fit-content(40%) fit-content(40%);
     grid-gap: 20px;
 }
 
@@ -20668,7 +20668,7 @@ article {
 article:hover {
     background-color: rgba(137, 101, 224, 0.67);
     border-radius: 5px;
-    transition: all 400ms ease-in;
+    transition: all 800ms ease-in;
 }
 
 .entry-header {

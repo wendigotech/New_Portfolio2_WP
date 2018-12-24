@@ -19,7 +19,7 @@ get_header(); ?>
                         </div>
                         <div class="row">
                             <?php if ( get_theme_mod( 'show_left_sidebar' ) ) : ?>
-                                <div class="col-md-4 widget-area d-sm-none d-none d-md-inline-block" role="complementary" id="left-sidebar">
+                                <div class="widget-area d-sm-none d-none d-md-inline-block col-md-4" role="complementary" id="left-sidebar">
                                     <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
                                         <?php dynamic_sidebar( 'left-sidebar' ); ?>
                                     <?php endif; ?>
