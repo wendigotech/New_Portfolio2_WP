@@ -12,7 +12,7 @@
                     <div class="card__info">
                         <span class="card__category"><?php the_tags(); ?></span>
                         <h3 class="card__title"><?php the_title(); ?></h3>
-                        <span class="card__by"><?php _e( 'by', 'wdg1' ); ?> <?php the_author(); ?></span>
+                        <span class="card__by"><?php _e( 'by', 'wdg1' ); ?> <a href="#" class="card__author" title="author"><?php the_author(); ?></a></span>
                     </div>
                 </article>
             <?php endwhile; ?>
