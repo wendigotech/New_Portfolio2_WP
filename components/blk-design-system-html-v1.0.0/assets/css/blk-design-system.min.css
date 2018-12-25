@@ -20143,7 +20143,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 }
 
 .card {
-    background: rgba(31, 34, 81, 0);
+    background: rgba(31, 34, 81, 0.75);
     border: 0;
     position: relative;
     width: 100%;
@@ -20666,7 +20666,7 @@ article {
 }
 
 article:hover {
-    background-color: rgba(137, 101, 224, 0.67);
+    background-color: rgba(137, 101, 224, 0.52);
     border-radius: 5px;
     transition: all 400ms ease-in;
 }
