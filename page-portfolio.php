@@ -75,6 +75,58 @@ get_header(); ?>
                             <h4 class="slide__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
                         </div>
                     </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '3', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Coexistence', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'The only guide is your heart', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Haunted Drift', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '4', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Fun Diverge', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '5', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <div class="slide__img" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '6', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
                     <button class="nav nav--prev">
                         <svg class="icon icon--navarrow-prev">
                             <use xlink:href="#icon-navarrow"></use>
