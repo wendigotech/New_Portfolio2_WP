@@ -396,7 +396,7 @@ a:focus {
     position: relative;
     margin: -40px 0 0 0;
     right: -60px;
-    background-color: rgba(20, 19, 19, 0.49);
+    background: rgba(20, 19, 19, 0.49);
 }
 
 .nav {
@@ -625,11 +625,9 @@ a:focus {
     }
 
     .slideshow {
-        height: 100vh;
+        height: 110vh;
         grid-template-columns: 27% 27% 27%;
         grid-column-gap: 9.5%;
-        display: grid;
-        grid-gap: 100px;
     }
 
     .slide {
@@ -648,7 +646,7 @@ a:focus {
     }
 
     .slide__title-wrap {
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 -2rem;
     }
 
     .slide__title,
