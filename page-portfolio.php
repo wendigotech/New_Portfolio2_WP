@@ -43,13 +43,13 @@ get_header(); ?>
             ?>
             <?php $portfolio = new WP_Query( $portfolio_args ); ?>
             <?php if ( $portfolio->have_posts() ) : ?>
-                <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
-                    <div class="slideshow">
-                        <div class="slideshow__deco"></div>
+                <div class="slideshow">
+                    <div class="slideshow__deco"></div>
+                    <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                         <div class="slide">
                             <div class="slide__img-wrap">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </div>
                             <div class="slide__side">
                                 <?php _e( 'Memories &amp; Thoughts', 'wdg1' ); ?>
@@ -60,89 +60,89 @@ get_header(); ?>
                                 <h4 class="slide__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
                             </div>
                         </div>
-                        <div class="slide">
-                            <div class="slide__img-wrap">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            </div>
-                            <div class="slide__side">
-                                <?php _e( 'Random Roam', 'wdg1' ); ?>
-                            </div>
-                            <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '2', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
-                            </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1504495619773-d6762510888b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                         </div>
-                        <div class="slide">
-                            <div class="slide__img-wrap">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            </div>
-                            <div class="slide__side">
-                                <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
-                            </div>
-                            <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '3', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Coexistence', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'The only guide is your heart', 'wdg1' ); ?></h4>
-                            </div>
+                        <div class="slide__side">
+                            <?php _e( 'Random Roam', 'wdg1' ); ?>
                         </div>
-                        <div class="slide">
-                            <div class="slide__img-wrap">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            </div>
-                            <div class="slide__side">
-                                <?php _e( 'Haunted Drift', 'wdg1' ); ?>
-                            </div>
-                            <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '4', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
-                            </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '2', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Machines', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'This is probably the greatest thing to happen in my life', 'wdg1' ); ?></h4>
                         </div>
-                        <div class="slide">
-                            <div class="slide__img-wrap">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            </div>
-                            <div class="slide__side">
-                                <?php _e( 'Fun Diverge', 'wdg1' ); ?>
-                            </div>
-                            <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '5', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="slide__img-wrap">
-                                <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
-                            </div>
-                            <div class="slide__side">
-                                <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
-                            </div>
-                            <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '6', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
-                            </div>
-                        </div>
-                        <button class="nav nav--prev">
-                            <svg class="icon icon--navarrow-prev">
-                                <use xlink:href="#icon-navarrow"></use>
-                            </svg>
-                        </button>
-                        <button class="nav nav--next">
-                            <svg class="icon icon--navarrow-next">
-                                <use xlink:href="#icon-navarrow"></use>
-                            </svg>
-                        </button>
                     </div>
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1537355439086-23e9e9f8e569?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Arbitrary Words', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '3', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Coexistence', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'The only guide is your heart', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1531857475897-48f2102b7566?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Haunted Drift', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '4', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Bellamio', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'The only prerequisite is that it makes you happy', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1544361381-432cd921c909?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Fun Diverge', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '5', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Pastures', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'Let\'s go up in here, and start having some fun', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img-wrap">
+                            <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
+                            <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1532461738641-556239632f44?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                        </div>
+                        <div class="slide__side">
+                            <?php _e( 'Hopes &amp; Dreams', 'wdg1' ); ?>
+                        </div>
+                        <div class="slide__title-wrap">
+                            <span class="slide__number"><?php _e( '6', 'wdg1' ); ?></span>
+                            <h3 class="slide__title"><?php _e( 'Focus', 'wdg1' ); ?></h3>
+                            <h4 class="slide__subtitle"><?php _e( 'This is unplanned it really just happens', 'wdg1' ); ?></h4>
+                        </div>
+                    </div>
+                    <button class="nav nav--prev">
+                        <svg class="icon icon--navarrow-prev">
+                            <use xlink:href="#icon-navarrow"></use>
+                        </svg>
+                    </button>
+                    <button class="nav nav--next">
+                        <svg class="icon icon--navarrow-next">
+                            <use xlink:href="#icon-navarrow"></use>
+                        </svg>
+                    </button>
+                </div>
             <?php else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
             <?php endif; ?>
