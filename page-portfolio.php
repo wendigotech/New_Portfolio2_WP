@@ -55,9 +55,9 @@ get_header(); ?>
                                 <?php the_tags(); ?>
                             </div>
                             <div class="slide__title-wrap">
-                                <span class="slide__number"><?php the_author(); ?></span>
+                                <span class="slide__number"><?php the_modified_date(); ?></span>
                                 <h3 class="slide__title"><?php the_title(); ?></h3>
-                                <?php the_excerpt( ); ?>
+                                <h4 class="slide__subtitle"><?php the_excerpt( ); ?></h4>
                             </div>
                         </div>
                     <?php endwhile; ?>
