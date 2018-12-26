@@ -55,9 +55,9 @@ get_header(); ?>
                                 <?php the_tags(); ?>
                             </div>
                             <div class="slide__title-wrap">
-                                <span class="slide__number"><?php _e( '1', 'wdg1' ); ?></span>
-                                <h3 class="slide__title"><?php _e( 'Automation', 'wdg1' ); ?></h3>
-                                <h4 class="slide__subtitle"><?php _e( 'A tree needs to be your friend if you\'re going to paint him', 'wdg1' ); ?></h4>
+                                <span class="slide__number"><?php the_author(); ?></span>
+                                <h3 class="slide__title"><?php the_title(); ?></h3>
+                                <?php the_excerpt( ); ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
