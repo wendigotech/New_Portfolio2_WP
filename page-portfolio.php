@@ -49,7 +49,7 @@ get_header(); ?>
                         <div class="slide">
                             <div class="slide__img-wrap">
                                 <?php $image_attributes = (is_singular() || in_the_loop()) ? wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'normal', 'with-image' ) : null; ?>
-                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('http://127.0.0.1:40000/https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
+                                <div class="slide__img <?php if($image_attributes) echo 'with-image'; ?>" style="background-image:url('https://images.unsplash.com/photo-1543633550-6e883c4cc3c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjIwOTIyfQ');<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>"></div>
                             </div>
                             <div class="slide__side">
                                 <?php the_tags(); ?>
@@ -76,21 +76,28 @@ get_header(); ?>
             <?php else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
             <?php endif; ?>
-            <div class="content">
-                <div class="content__item">
-                    <span class="content__number"><?php the_modified_date(); ?></span>
-                    <h3 class="content__title"><?php the_title(); ?></h3>
-                    <?php the_excerpt( ); ?>
-                    <div class="content__text">
-                        <?php the_content(); ?>
-                    </div>
+            <?php if ( $portfolio->have_posts() ) : ?>
+                <div class="content">
+                    <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+                        <div class="content__item">
+                            <span class="content__number"><?php the_modified_date(); ?></span>
+                            <h3 class="content__title"><?php the_title(); ?></h3>
+                            <?php the_excerpt( ); ?>
+                            <div class="content__text">
+                                <?php the_content(); ?>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                    <button class="content__close">
+                        <svg class="icon icon--longarrow">
+                            <use xlink:href="#icon-longarrow"></use>
+                        </svg>
+                    </button>
                 </div>
-                <button class="content__close">
-                    <svg class="icon icon--longarrow">
-                        <use xlink:href="#icon-longarrow"></use>
-                    </svg>
-                </button>
-            </div>
+            <?php else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
+            <?php endif; ?>
         </main>
     </div>
 </div>                
