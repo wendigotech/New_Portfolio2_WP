@@ -693,7 +693,11 @@ a:focus {
         padding: calc(15vh) 0 7vh;
         width: 50.5%;
         right: 7.5%;
-        overflow: hidden;
+        overflow: auto;
+    }
+
+    .content__item ::-webkit-scrollbar {
+        display: none;
     }
 
     .content__close {
@@ -746,4 +750,8 @@ h4.slide__subtitle p {
 
 h4.content__subtitle p {
     color: #ba54f5;
+}
+
+.content__item--current::-webkit-scrollbar {
+    display: none;
 }
