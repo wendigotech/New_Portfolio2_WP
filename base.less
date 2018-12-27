@@ -453,6 +453,7 @@ a:focus {
     z-index: 1000;
     background-color: rgba(20, 18, 18, 0.52);
     padding: 10px;
+    height: max-content;
 }
 
 .slide__number {
@@ -471,7 +472,7 @@ a:focus {
 .slide__title,
 .slide__subtitle,
 .slide__side {
-    display: flex;
+    display: inline-block;
 }
 
 .content {
@@ -493,6 +494,7 @@ a:focus {
     padding: 10vh 5vw;
     overflow: scroll;
     scrollbar-width: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     border-radius: 100px;
 }
 

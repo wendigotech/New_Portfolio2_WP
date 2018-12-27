@@ -494,6 +494,9 @@ a:focus {
     z-index: 1000;
     background-color: rgba(20, 18, 18, 0.52);
     padding: 10px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
 }
 
 .slide__number {
@@ -512,9 +515,7 @@ a:focus {
 .slide__title,
 .slide__subtitle,
 .slide__side {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
 }
 
 .content {
