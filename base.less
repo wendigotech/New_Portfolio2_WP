@@ -325,9 +325,9 @@ a:focus {
     position: relative;
     overflow: hidden;
     margin: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
-    height: calc(100vh - 10rem);
+    height: calc(110vh - 10rem);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 0.5%;
@@ -471,17 +471,17 @@ a:focus {
 .slide__title,
 .slide__subtitle,
 .slide__side {
-    display: none;
+    display: flex;
 }
 
 .content {
     position: fixed;
-    top: 10rem;
+    top: 7rem;
     left: 0;
     width: 100%;
     height: calc(100% - 10rem);
     pointer-events: none;
-    z-index: -2;
+    z-index: 1;
 }
 
 .content__item {
