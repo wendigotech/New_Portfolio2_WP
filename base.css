@@ -534,7 +534,7 @@ a:focus {
     padding: 10vh 5vw;
     overflow: scroll;
     scrollbar-width: none;
-    border-radius: 50px 100px;
+    border-radius: 100px;
 }
 
 .content__item--current,
@@ -630,7 +630,7 @@ a:focus {
     }
 
     .slideshow {
-        height: 120vh;
+        height: 100vh;
         grid-template-columns: 27% 27% 27%;
         grid-column-gap: 9.5%;
     }
