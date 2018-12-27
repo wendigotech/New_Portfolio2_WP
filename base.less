@@ -642,7 +642,7 @@ a:focus {
         padding: calc(10vh + 5rem) 0 7vh;
         width: 50.5%;
         right: 7.5%;
-        overflow: auto;
+        overflow: overlay;
 
         ::-webkit-scrollbar {
             display: none;
@@ -700,5 +700,7 @@ h4.content__subtitle p {
 }
 
 .content__item::-webkit-scrollbar {
-    display: none;
+}
+
+.content__item--current {
 }
