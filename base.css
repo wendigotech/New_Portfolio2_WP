@@ -747,19 +747,3 @@ h4.slide__subtitle p {
 h4.content__subtitle p {
     color: #ba54f5;
 }
-
-div.content__text {
-    width: 500px;
-    height: 300px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transform-origin: right top;
-    -ms-transform-origin: right top;
-    transform-origin: right top;
-    -webkit-transform: rotate(-90deg) translateY(-100px);
-    -ms-transform: rotate(-90deg) translateY(-100px);
-    transform: rotate(-90deg) translateY(-100px);
-}
