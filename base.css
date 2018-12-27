@@ -752,6 +752,6 @@ h4.content__subtitle p {
     color: #ba54f5;
 }
 
-.content__item--current::-webkit-scrollbar {
+.content__item::-webkit-scrollbar {
     display: none;
 }
