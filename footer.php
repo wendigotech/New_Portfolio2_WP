@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-md-3 d-flex justify-content-center mt-md-0 align-items-end mt-3 mb-md-2">
                             <a href="<?php echo esc_url( home_url() ); ?>" rel="home" class="">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" width="200" alt="wendigo logo"/>
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/gfx/VectorEPS.svg" alt="wendigo logo" width="150"/>
                             </a>
                         </div>
                         <div class="col-md-6">
