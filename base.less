@@ -643,9 +643,9 @@ a:focus {
     }
 
     .content__item {
-        padding: calc(10vh + 5rem) 0 7vh;
-        width: 50.5%;
-        right: 7.5%;
+        padding: calc(10vh + 4rem) 0 7vh;
+        width: 60.5%;
+        right: 3.5%;
         overflow: -webkit-overlay;
 
         ::-webkit-scrollbar {
@@ -681,6 +681,8 @@ a:focus {
         column-gap: 2rem;
         max-width: none;
         text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -709,4 +711,5 @@ h4.content__subtitle p {
 .content__item--current {
     background: rgba(31, 34, 81, 0.58);
     overflow: scroll;
+    transition: background-color 2s ease-in;
 }
