@@ -743,3 +743,7 @@ a:focus {
 h4.slide__subtitle p {
     color: #ffd600;
 }
+
+h4.content__subtitle p {
+    color: #ba54f5;
+}
