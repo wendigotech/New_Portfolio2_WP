@@ -83,7 +83,9 @@ get_header(); ?>
                             <span class="content__number"><?php the_modified_date(); ?></span>
                             <h3 class="content__title"><?php the_title(); ?></h3>
                             <h4 class="content__subtitle"><?php the_excerpt( ); ?></h4>
-                            <?php the_content(); ?>
+                            <div class="content__text">
+                                <?php the_content(); ?>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
