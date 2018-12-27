@@ -7039,7 +7039,7 @@ button.bg-darker:hover {
 
     .d-md-inline-block {
         display: inline-block !important;
-        background-color: rgba(31, 34, 81, 0.75);
+        background-color: rgba(31, 34, 81, 0.58);
         border-radius: 5px;
     }
 
@@ -20143,7 +20143,7 @@ input.datetimepicker[data-color=yellow]+.bootstrap-datetimepicker-widget table t
 }
 
 .card {
-    background: rgba(31, 34, 81, 0.75);
+    background: rgba(31, 34, 81, 0.58);
     border: 0;
     position: relative;
     width: 100%;

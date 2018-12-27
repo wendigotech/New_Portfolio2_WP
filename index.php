@@ -22,8 +22,7 @@ get_header(); ?>
                                 <div class="widget-area d-sm-none d-none d-md-inline-block col-md-4" role="complementary" id="left-sidebar">
                                     <?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
                                         <?php dynamic_sidebar( 'left-sidebar' ); ?>
-                                    <?php endif; ?>
-                                    <h3 class="widget-title"><?php _e( 'Recent Posts', 'wdg1' ); ?></h3> 
+                                    <?php endif; ?> 
                                 </div>
                             <?php endif; ?>
                             <div class="col-md-8 content-area col-sm-12" id="primary">
