@@ -1,14 +1,14 @@
 
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+            <article2 <?php post_class(); ?> id="post-<?php the_ID(); ?>">
                 <header class="entry-header">
                     <h1><?php the_title(); ?></h1>
                     <div class="entry-meta">
                         <p><?php _e( 'Posted on', 'wdg1' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'wdg1' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
                     </div>
                 </header>
-                <div class="entry-content">
+                <div>
                     <?php the_content(); ?>
                     <?php wp_link_pages( array() ); ?>
                 </div>
@@ -18,7 +18,7 @@
                     <?php endif; ?>
                     <?php edit_post_link( '<b class="text-success">Edit Post</b>' ); ?>
                 </footer>
-            </article>
+            </article2>
         <?php endwhile; ?>
     <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.', 'wdg1' ); ?></p>
