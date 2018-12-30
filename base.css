@@ -17,6 +17,8 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    scrollbar-color: #ba54f5 #171941;
+    scrollbar-width: thin;
 }
 
 body {
@@ -763,6 +765,7 @@ h4.content__subtitle p {
     -webkit-transition: all 2s ease-in;
     -o-transition: all 2s ease-in;
     transition: all 2s ease-in;
+    scrollbar-color: #ba54f5 #171941;
 }
 
 div-single {
