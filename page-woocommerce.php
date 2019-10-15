@@ -3,8 +3,7 @@
  Template Name: ST2 Page WooCommerce
  */
 ?>
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <div id="page-wrapper" class="wrapper">
     <div class="container" id="content" tabindex="-1">

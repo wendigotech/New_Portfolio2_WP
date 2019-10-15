@@ -133,10 +133,10 @@ function st2_customize_register( $wp_customize ) {
 
     /* Pinegrow generated Customizer Controls Begin */
 
-    $wp_customize->add_section( 'footer_settings', array(
-        'title' => __( 'ST2 Footer Settings', 'wdg1' ),
-        'description' => __( 'Footer Settings', 'wdg1' ),
-        'priority' => '2'
+    $wp_customize->add_section( 'theme_settings', array(
+        'title' => __( 'ST2 Theme Settings', 'wdg1' ),
+        'description' => __( 'Theme Settings > CAUTION: Work in Progress', 'wdg1' ),
+        'priority' => '0'
     ));
 
     $wp_customize->add_section( 'header_settings', array(
@@ -145,10 +145,10 @@ function st2_customize_register( $wp_customize ) {
         'priority' => '1'
     ));
 
-    $wp_customize->add_section( 'theme_settings', array(
-        'title' => __( 'ST2 Theme Settings', 'wdg1' ),
-        'description' => __( 'Theme Settings > CAUTION: Work in Progress', 'wdg1' ),
-        'priority' => '0'
+    $wp_customize->add_section( 'footer_settings', array(
+        'title' => __( 'ST2 Footer Settings', 'wdg1' ),
+        'description' => __( 'Footer Settings', 'wdg1' ),
+        'priority' => '2'
     ));
     $pgwp_sanitize = function_exists('pgwp_sanitize_placeholder') ? 'pgwp_sanitize_placeholder' : null;
 
@@ -175,28 +175,6 @@ function st2_customize_register( $wp_customize ) {
         'type' => 'checkbox',
         'section' => 'theme_settings'
     ));
-
-    $wp_customize->add_setting( 'jumbotron_heading_color', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_heading_color', array(
-        'label' => __( 'Jumbotron Heading Color', 'wdg1' ),
-        'type' => 'color',
-        'section' => 'header_settings'
-    ) ) );
-
-    $wp_customize->add_setting( 'jumbotron_text_color', array(
-        'type' => 'theme_mod',
-        'sanitize_callback' => $pgwp_sanitize
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'jumbotron_text_color', array(
-        'label' => __( 'Jumbotron Paragraph Color', 'wdg1' ),
-        'type' => 'color',
-        'section' => 'header_settings'
-    ) ) );
 
     $wp_customize->add_setting( 'footer_text', array(
         'type' => 'theme_mod',
@@ -277,7 +255,7 @@ if ( ! function_exists( 'st2_enqueue_scripts' ) ) :
     wp_enqueue_style( 'style-1', 'https://fonts.googleapis.com/css?family=Poppins', false, null, 'all');
 
     wp_deregister_style( 'style' );
-    wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, null, 'all');
 
     wp_deregister_style( 'bootstrap' );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', false, null, 'all');
@@ -313,6 +291,7 @@ endif;
  * Resource files included by Pinegrow.
  */
 /* Pinegrow generated Include Resources Begin */
+require_once "inc/wp_pg_helpers.php";
 require_once "inc/bootstrap/wp_bootstrap4_navwalker.php";
 
     /* Pinegrow generated Include Resources End */

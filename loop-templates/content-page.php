@@ -1,6 +1,7 @@
 
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
+            <?php PG_Helper::rememberShownPost(); ?>
             <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
                 <header class="entry-header">
                     <h1><?php the_title(); ?></h1>

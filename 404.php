@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="wrapper" id="error-404-wrapper" tabindex="-1">
     <div class="container " id="content" tabindex="-1">

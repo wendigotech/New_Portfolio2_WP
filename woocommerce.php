@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="wrapper" id="woocommerce-wrapper">
     <div tabindex="-1" id="content" class="container">

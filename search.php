@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="wrapper" id="search-wrapper">
     <div class="container" id="content" tabindex="-1">
@@ -17,6 +16,7 @@ get_header(); ?>
                     <p><?php echo $wp_query->found_posts.' results found.'; ?></p>
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
+                            <?php PG_Helper::rememberShownPost(); ?>
                             <article <?php post_class( 'mb-5' ); ?> id="post-<?php the_ID(); ?>">
                                 <header class="entry-header">
                                     <?php if ( is_singular() ) : ?>
@@ -28,11 +28,7 @@ get_header(); ?>
                                         <p><?php _e( 'Posted on', 'wdg1' ); ?> <span><?php the_modified_date(); ?></span> <?php _e( 'by', 'wdg1' ); ?> <span><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author(); ?></a></span></p>
                                     </div>
                                 </header>
-                                <?php
-                                    if ( has_post_thumbnail() ) {
-                                        the_post_thumbnail( 'large' );
-                                    }
-                                 ?>
+                                <?php echo PG_Image::getPostImage( null, 'large', null, 'both', null ) ?>
                                 <div class="entry-content">
                                     <?php the_excerpt( ); ?>
                                     <a class="btn btn-secondary" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Read More', 'wdg1' ); ?></a>

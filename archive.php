@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="wrapper" id="archive-wrapper">
     <div class="container " id="content" tabindex="-1">
